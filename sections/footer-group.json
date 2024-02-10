@@ -1,0 +1,91 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "3bf8b6fb-c0dd-4699-b1e8-f1d8426c53e3": {
+      "type": "newsletter",
+      "blocks": {
+        "sections--20651490148634__3bf8b6fb-c0dd-4699-b1e8-f1d8426c53e3-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe Now",
+            "heading_size": "h1"
+          }
+        },
+        "sections--20651490148634__3bf8b6fb-c0dd-4699-b1e8-f1d8426c53e3-paragraph-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Gain exclusive access to new collections and unbeatable offers.<\/p>"
+          }
+        },
+        "sections--20651490148634__3bf8b6fb-c0dd-4699-b1e8-f1d8426c53e3-email_form-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "sections--20651490148634__3bf8b6fb-c0dd-4699-b1e8-f1d8426c53e3-heading-1",
+        "sections--20651490148634__3bf8b6fb-c0dd-4699-b1e8-f1d8426c53e3-paragraph-1",
+        "sections--20651490148634__3bf8b6fb-c0dd-4699-b1e8-f1d8426c53e3-email_form-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "8c121e9c-3e72-47f4-912e-2031983e1e8e": {
+          "type": "link_list",
+          "disabled": true,
+          "settings": {
+            "heading": "",
+            "menu": "main-menu"
+          }
+        },
+        "0b5d6866-d58b-478f-ac03-d0812a262914": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "footer"
+          }
+        },
+        "8e0821d1-525b-4f94-b95d-e83be565673c": {
+          "type": "text",
+          "settings": {
+            "heading": "CONTACT DETAILS",
+            "subtext": "<p><strong>Email: <\/strong>support@cutyduty.com<a href=\"mailto:hello@izytools.com\" target=\"_blank\" title=\"mailto:hello@izytools.com\"><br\/><\/a><strong>Mobile:<\/strong> + 1 209 730 3727<br\/><strong>Mailing Address: <br\/><\/strong>2679 Main Street<br\/>Littleton, CO 80120<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "8c121e9c-3e72-47f4-912e-2031983e1e8e",
+        "0b5d6866-d58b-478f-ac03-d0812a262914",
+        "8e0821d1-525b-4f94-b95d-e83be565673c"
+      ],
+      "settings": {
+        "color_scheme": "scheme-621e6e0b-178f-4993-8e88-97df33684d03",
+        "newsletter_enable": false,
+        "newsletter_heading": "",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "3bf8b6fb-c0dd-4699-b1e8-f1d8426c53e3",
+    "footer"
+  ]
+}

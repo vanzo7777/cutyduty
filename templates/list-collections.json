@@ -1,0 +1,73 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "disabled": true,
+      "settings": {
+        "title": "Collections",
+        "sort": "alphabetical",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "columns_mobile": "2"
+      }
+    },
+    "8d2f0834-8418-4ef6-a5d2-582a954fec8f": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16998539460858__8d2f0834-8418-4ef6-a5d2-582a954fec8f-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "art"
+          }
+        },
+        "template--16998539460858__8d2f0834-8418-4ef6-a5d2-582a954fec8f-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ipad-mini"
+          }
+        },
+        "template--16998539460858__8d2f0834-8418-4ef6-a5d2-582a954fec8f-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ipad"
+          }
+        },
+        "0b3ee49c-7931-466c-8f04-0e3f2f163b73": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ipad-pro"
+          }
+        },
+        "89e3669f-af03-4a62-b26b-e2645288a629": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ipad-air"
+          }
+        }
+      },
+      "block_order": [
+        "template--16998539460858__8d2f0834-8418-4ef6-a5d2-582a954fec8f-featured_collection-1",
+        "template--16998539460858__8d2f0834-8418-4ef6-a5d2-582a954fec8f-featured_collection-2",
+        "template--16998539460858__8d2f0834-8418-4ef6-a5d2-582a954fec8f-featured_collection-3",
+        "0b3ee49c-7931-466c-8f04-0e3f2f163b73",
+        "89e3669f-af03-4a62-b26b-e2645288a629"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8d2f0834-8418-4ef6-a5d2-582a954fec8f"
+  ]
+}

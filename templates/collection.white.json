@@ -1,0 +1,350 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "3fd3c37e-c277-4c63-bdb4-cd4b00084b88": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;\">\n  <video autoplay muted loop playsinline style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; transform: scale(3.1); transform-origin: center 36%;\">\n    <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5e0f7692e26b4c2a9bb162a503534ee2.mov\">\n    Your browser does not support the video tag.\n  <\/video>\n<\/div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": false,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "d4c7f273-86d0-4eff-b767-7e19fce07c6d": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20651489657114__d4c7f273-86d0-4eff-b767-7e19fce07c6d-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Need help identifying your iPad model?",
+            "heading_size": "h1"
+          }
+        },
+        "template--20651489657114__d4c7f273-86d0-4eff-b767-7e19fce07c6d-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If your operating system is iPadOS or iOS 12.2 or any newer iteration, you can access to <br\/>Settings &gt; General &gt; About &gt; Model Name.<\/p>"
+          }
+        },
+        "template--20651489657114__d4c7f273-86d0-4eff-b767-7e19fce07c6d-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--20651489657114__d4c7f273-86d0-4eff-b767-7e19fce07c6d-heading-1",
+        "template--20651489657114__d4c7f273-86d0-4eff-b767-7e19fce07c6d-text-1",
+        "template--20651489657114__d4c7f273-86d0-4eff-b767-7e19fce07c6d-button-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "a1432bc3-183e-4e35-8e7c-097da44fa16e": {
+      "type": "slideshow",
+      "blocks": {
+        "template--20651489657114__a1432bc3-183e-4e35-8e7c-097da44fa16e-slide-1": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading2": "",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--20651489657114__a1432bc3-183e-4e35-8e7c-097da44fa16e-slide-2": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading2": "",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--20651489657114__a1432bc3-183e-4e35-8e7c-097da44fa16e-slide-1",
+        "template--20651489657114__a1432bc3-183e-4e35-8e7c-097da44fa16e-slide-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "aa99af3a-0f68-4866-a28f-14381a6ffd50": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20651489657114__aa99af3a-0f68-4866-a28f-14381a6ffd50-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Need help identifying your iPad model?",
+            "heading_size": "h1"
+          }
+        },
+        "template--20651489657114__aa99af3a-0f68-4866-a28f-14381a6ffd50-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If your operating system is iPadOS or iOS 12.2 or any newer iteration, you can access to <br\/><strong>Settings &gt; General &gt; About &gt; Model Name.<\/strong><\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--20651489657114__aa99af3a-0f68-4866-a28f-14381a6ffd50-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--20651489657114__aa99af3a-0f68-4866-a28f-14381a6ffd50-heading-1",
+        "template--20651489657114__aa99af3a-0f68-4866-a28f-14381a6ffd50-text-1",
+        "template--20651489657114__aa99af3a-0f68-4866-a28f-14381a6ffd50-button-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "324b9b37-9f31-4924-bf4d-47f9d1d9f885": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "2c1acbb7-0701-4658-9880-221c211a52f1": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "c7ba7615-5f04-41a9-9a9a-96591faf0fe9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20651489657114__c7ba7615-5f04-41a9-9a9a-96591faf0fe9-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<a href=\"https:\/\/www.instagram.com\/cuty_duty_official\/\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/cuty_duty_official\/\"><strong>FOLLOW US AT @cuty_duty_official<\/strong><\/a>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "template--20651489657114__c7ba7615-5f04-41a9-9a9a-96591faf0fe9-heading-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 16,
+        "padding_bottom": 24
+      }
+    },
+    "16947145913c6478cf": {
+      "type": "apps",
+      "blocks": {
+        "63ae36c6-9295-4181-a5c1-3ebf10dfb4f7": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": "<a href=\"https:\/\/www.instagram.com\/cuty_duty_official\/\" target=\"_blank\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0736\/0243\/3306\/files\/Untitled_design_30507670-6044-4194-9311-8570db06deac.png?v=1695223739\" alt=\"Follow us on Instagram!\" style=\"width: 100%; max-width: 4194px; height: auto;\">\n<\/a>"
+          }
+        }
+      },
+      "block_order": [
+        "63ae36c6-9295-4181-a5c1-3ebf10dfb4f7"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "16947214732bd30908": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "35d4edcb-4ee5-4063-8a70-df63d2507c03": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--20651489657114__35d4edcb-4ee5-4063-8a70-df63d2507c03-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_20231206_202214_0003_1.jpg",
+            "title": "<strong>ZERO COST SHIPPING<\/strong>",
+            "text": "<p>Enjoy free shipping on orders over $150. Elevate your shopping with free delivery perks<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20651489657114__35d4edcb-4ee5-4063-8a70-df63d2507c03-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_20231206_202214_0002_1.jpg",
+            "title": "<strong>ZERO-RISK RETURNS<\/strong>",
+            "text": "<p>Your satisfaction matters. Video proof of a defect ensures a smooth return<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20651489657114__35d4edcb-4ee5-4063-8a70-df63d2507c03-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_20231206_202213_0000_2.jpg",
+            "title": "<strong>SAFE TRANSACTION<\/strong>",
+            "text": "<p>The payment details are securely encrypted and processed.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "8e667ff2-7024-454e-bfce-a801252f9f0e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_20231206_202214_0001_1.jpg",
+            "title": "<strong>NEED HELP?<\/strong>",
+            "text": "<p>Contact us via email at support@cutyduty.com for guaranteed response within 24 hours.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20651489657114__35d4edcb-4ee5-4063-8a70-df63d2507c03-column-1",
+        "template--20651489657114__35d4edcb-4ee5-4063-8a70-df63d2507c03-column-2",
+        "template--20651489657114__35d4edcb-4ee5-4063-8a70-df63d2507c03-column-3",
+        "8e667ff2-7024-454e-bfce-a801252f9f0e"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "3fd3c37e-c277-4c63-bdb4-cd4b00084b88",
+    "product-grid",
+    "d4c7f273-86d0-4eff-b767-7e19fce07c6d",
+    "a1432bc3-183e-4e35-8e7c-097da44fa16e",
+    "aa99af3a-0f68-4866-a28f-14381a6ffd50",
+    "324b9b37-9f31-4924-bf4d-47f9d1d9f885",
+    "2c1acbb7-0701-4658-9880-221c211a52f1",
+    "c7ba7615-5f04-41a9-9a9a-96591faf0fe9",
+    "16947145913c6478cf",
+    "16947214732bd30908",
+    "35d4edcb-4ee5-4063-8a70-df63d2507c03"
+  ]
+}

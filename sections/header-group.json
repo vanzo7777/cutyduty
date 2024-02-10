@@ -1,0 +1,96 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "7630cf8c-376d-444b-ba90-5eaec2de8666": {
+          "type": "announcement",
+          "settings": {
+            "text": "FREE SHIPPING ON ORDERS OVER $100",
+            "link": ""
+          }
+        },
+        "363d6261-448b-490c-b594-1ad83a7101e6": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "Use \"VALENTINS\" to get 10% OFF",
+            "link": ""
+          }
+        },
+        "8175ed0f-9204-400b-81eb-60c1c6bd4cfc": {
+          "type": "announcement",
+          "settings": {
+            "text": "BUY A SET AND SAVE EXTRA 20% OFF",
+            "link": ""
+          }
+        },
+        "1798f080-0f0c-4062-af57-0eb807f3c632": {
+          "type": "announcement",
+          "settings": {
+            "text": "GIFT WITH ORDERS OVER $50",
+            "link": ""
+          }
+        },
+        "announcement_eCnqdb": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        },
+        "b8edcafd-c379-475d-af22-b67f32e0d79d": {
+          "type": "announcement",
+          "settings": {
+            "text": "LUXURY GIFT BOX FOR ORDERS OVER 130$",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "7630cf8c-376d-444b-ba90-5eaec2de8666",
+        "363d6261-448b-490c-b594-1ad83a7101e6",
+        "8175ed0f-9204-400b-81eb-60c1c6bd4cfc",
+        "1798f080-0f0c-4062-af57-0eb807f3c632",
+        "announcement_eCnqdb",
+        "b8edcafd-c379-475d-af22-b67f32e0d79d"
+      ],
+      "settings": {
+        "color_scheme": "scheme-621e6e0b-178f-4993-8e88-97df33684d03",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": true,
+        "change_slides_speed": 6,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "background-1",
+        "menu_color_scheme": "background-2",
+        "enable_country_selector": false,
+        "enable_language_selector": true,
+        "mobile_logo_position": "left",
+        "margin_bottom": 0,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

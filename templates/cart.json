@@ -1,0 +1,79 @@
+{
+  "sections": {
+    "99c6fd47-05ad-4828-a6d8-f7485f0bf170": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "56df981a-5c1f-477c-8dd0-00d8935c9a9e": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16998539034874__56df981a-5c1f-477c-8dd0-00d8935c9a9e-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em><strong>GIFT WITH ORDERS OVER $100<\/strong><\/em>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16998539034874__56df981a-5c1f-477c-8dd0-00d8935c9a9e-heading-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "inverse",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "99c6fd47-05ad-4828-a6d8-f7485f0bf170",
+    "56df981a-5c1f-477c-8dd0-00d8935c9a9e",
+    "cart-items",
+    "cart-footer"
+  ]
+}
