@@ -4,9 +4,6 @@
   --alpha-link: 0.85;
   --alpha-badge-border: 0.1;
 }
-body {
-  background-color:red ;
-}
 .product-card-wrapper .card,
 .contains-card--product {
   --border-radius: var(--product-card-corner-radius);
@@ -1385,9 +1382,9 @@ button.shopify-payment-button__button--unbranded {
   align-items: center;
 }
 
-.button.loading > .loading-overlay__spinner .spinner {
+/*.button.loading > .loading-overlay__spinner .spinner {
   width: fit-content;
-}
+}*/
 
 .button.loading > .loading-overlay__spinner .path {
   stroke: rgb(var(--color-button-text));

@@ -116,13 +116,13 @@
         "template--20698256179482__ee3cd2e2-205a-4cd0-8736-2e823bf22394-featured_collection-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "ipad-pro"
+            "collection": "sport"
           }
         },
         "37e56f0e-0db6-4c5a-8447-cd934dc2bdaa": {
           "type": "featured_collection",
           "settings": {
-            "collection": "ipad-mini"
+            "collection": "cotton"
           }
         },
         "85b6082f-a675-499f-907a-23127f75cf4d": {
@@ -383,7 +383,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
+        "enable_quick_add": true,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
