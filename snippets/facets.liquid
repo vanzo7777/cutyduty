@@ -157,56 +157,85 @@
                       <fieldset class="facets-wrap parent-wrap {% if filter_type == 'vertical' %} facets-wrap-vertical{% endif %}">
                         <legend class="visually-hidden">{{ filter.label | escape }}</legend>
                         <ul
-                          class="{% if filter_type != 'vertical' %} facets__list{% endif %} list-unstyled no-js-hidden"
+                          class="{% if filter_type != 'vertical' %} facets__list{% endif %} list-unstyled facets__list--flex {% if filter_type == 'vertical' and filter.label != 'Availability' %}facets__list--vertical{% endif %} no-js-hidden"
                           role="list"
                         >
                           {%- for value in filter.values -%}
                             <li class="list-menu__item facets__item{% if forloop.index > 10 and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
+                                {% if filter.label == 'Color' %}
+                                {%  assign value_down =  value.value | downcase %}
+                                {%  assign valuet =  value_down | replace : ' ', '_' | append: '.jpg' %}
                               <label
-                                for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
-                                class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}"
+
+                                      for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
+                                      class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}"
                               >
-                                <input
-                                  type="checkbox"
-                                  name="{{ value.param_name }}"
-                                  value="{{ value.value }}"
-                                  id="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
-                                  {% if value.active %}
-                                    checked
-                                  {% endif %}
-                                  {% if value.count == 0 and value.active == false %}
-                                    disabled
-                                  {% endif %}
-                                >
+                                    <input
+                                            type="checkbox"
+                                            name="{{ value.param_name }}"
+                                            value="{{ value.value }}"
+                                            id="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
+                                            {% if value.active %}
+                                              checked
+                                            {% endif %}
+                                            {% if value.count == 0 and value.active == false %}
+                                              disabled
+                                            {% endif %}
+                                    >
 
-                                <svg
-                                  width="1.6rem"
-                                  height="1.6rem"
-                                  viewBox="0 0 16 16"
-                                  aria-hidden="true"
-                                  focusable="false"
-                                >
-                                  <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
-                                </svg>
+                                  <div class="filter-swatch {% if value_down == 'white' %}filter-swatch--transparent{% endif %}"  style="background: url('{{ valuet  | file_img_url }}')">
 
-                                <svg
-                                  aria-hidden="true"
-                                  class="icon icon-checkmark"
-                                  width="1.1rem"
-                                  height="0.7rem"
-                                  viewBox="0 0 11 7"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
-                                    stroke="currentColor"
-                                    stroke-width="1.75"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                </svg>
+                                  </div>
 
-                                <span aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
-                                <span class="visually-hidden">
+                                  <span aria-hidden="true">{{ value.label | escape }}</span>
+                              </label>
+                                {% else %}
+                                  <label
+                                          for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
+                                          class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}"
+                                  >
+                                  <input
+                                          type="checkbox"
+                                          name="{{ value.param_name }}"
+                                          value="{{ value.value }}"
+                                          id="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
+                                          {% if value.active %}
+                                            checked
+                                          {% endif %}
+                                          {% if value.count == 0 and value.active == false %}
+                                            disabled
+                                          {% endif %}
+                                  >
+
+                                  <svg
+                                          width="1.6rem"
+                                          height="1.6rem"
+                                          viewBox="0 0 16 16"
+                                          aria-hidden="true"
+                                          focusable="false"
+                                  >
+                                    <rect width="16" height="16" stroke="currentColor" fill="none"
+                                          stroke-width="1"></rect>
+                                  </svg>
+
+                                  <svg
+                                          aria-hidden="true"
+                                          class="icon icon-checkmark"
+                                          width="1.1rem"
+                                          height="0.7rem"
+                                          viewBox="0 0 11 7"
+                                          fill="none"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
+                                          stroke="currentColor"
+                                          stroke-width="1.75"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                  </svg>
+
+                                  <span aria-hidden="true">{{ value.label | escape }}</span>
+                                  <span class="visually-hidden">
                                   {{- value.label | escape }} (
                                   {%- if value.count == 1 -%}
                                     {{- 'products.facets.product_count_simple.one' | t: count: value.count -}}
@@ -214,8 +243,9 @@
                                     {{- 'products.facets.product_count_simple.other' | t: count: value.count -}}
                                   {%- endif -%}
                                   )</span
-                                >
-                              </label>
+                                  >
+                                  </label>
+                                {% endif %}
                             </li>
                           {%- endfor -%}
                         </ul>
@@ -667,53 +697,82 @@
                             {% render 'icon-arrow' %}
                             {{ filter.label | escape }}
                           </button>
-                          <ul class="mobile-facets__list list-unstyled" role="list">
+                          <ul class="mobile-facets__list list-unstyled facets__list--flex {% if filter_type == 'vertical' and filter.label != 'Availability' %}facets__list--vertical{% endif %}" role="list">
                             {%- for value in filter.values -%}
-                              <li class="mobile-facets__item list-menu__item">
-                                <label
-                                  for="Filter-{{ filter.param_name | escape }}-mobile-{{ forloop.index }}"
-                                  class="mobile-facets__label{% if value.count == 0 and value.active == false %} mobile-facets__label--disabled{% endif %}"
-                                >
-                                  <input
-                                    class="mobile-facets__checkbox"
-                                    type="checkbox"
-                                    name="{{ value.param_name }}"
-                                    value="{{ value.value }}"
-                                    id="Filter-{{ filter.param_name | escape }}-mobile-{{ forloop.index }}"
-                                    {% if value.active %}
-                                      checked
-                                    {% endif %}
-                                    {% if value.count == 0 and value.active == false %}
-                                      disabled
-                                    {% endif %}
+                              <li class="list-menu__item facets__item">
+                                {% if filter.label == 'Color' %}
+                                  {%  assign value_down =  value.value | downcase %}
+                                  {%  assign valuet =  value_down | replace : ' ', '_' | append: '.jpg' %}
+
+                                  <label
+                                          for="Filter-{{ filter.param_name | escape }}-mobile-{{ forloop.index }}"
+                                          class="mobile-facets__label{% if value.count == 0 and value.active == false %} mobile-facets__label--disabled{% endif %}"
                                   >
+                                    <input
+                                            class="mobile-facets__checkbox"
+                                            type="checkbox"
+                                            name="{{ value.param_name }}"
+                                            value="{{ value.value }}"
+                                            id="Filter-{{ filter.param_name | escape }}-mobile-{{ forloop.index }}"
+                                            {% if value.active %}
+                                              checked
+                                            {% endif %}
+                                            {% if value.count == 0 and value.active == false %}
+                                              disabled
+                                            {% endif %}
+                                    >
 
-                                  <span class="mobile-facets__highlight"></span>
+                                    <div class="filter-swatch {% if value_down == 'white' %}filter-swatch--transparent{% endif %}"  style="background: url('{{ valuet  | file_img_url }}')">
 
-                                  <svg
-                                    width="1.6rem"
-                                    height="1.6rem"
-                                    viewBox="0 0 16 16"
-                                    aria-hidden="true"
-                                    focusable="false"
+                                    </div>
+
+                                    <span aria-hidden="true">{{ value.label | escape }}</span>
+                                  </label>
+                                {% else %}
+                                  <label
+                                          for="Filter-{{ filter.param_name | escape }}-mobile-{{ forloop.index }}"
+                                          class="mobile-facets__label{% if value.count == 0 and value.active == false %} mobile-facets__label--disabled{% endif %}"
                                   >
-                                    <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
-                                  </svg>
+                                    <input
+                                            class="mobile-facets__checkbox"
+                                            type="checkbox"
+                                            name="{{ value.param_name }}"
+                                            value="{{ value.value }}"
+                                            id="Filter-{{ filter.param_name | escape }}-mobile-{{ forloop.index }}"
+                                            {% if value.active %}
+                                              checked
+                                            {% endif %}
+                                            {% if value.count == 0 and value.active == false %}
+                                              disabled
+                                            {% endif %}
+                                    >
 
-                                  <svg
-                                    aria-hidden="true"
-                                    class="icon icon-checkmark"
-                                    width="1.1rem"
-                                    height="0.7rem"
-                                    viewBox="0 0 11 7"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
-                                  </svg>
+                                    <span class="mobile-facets__highlight"></span>
 
-                                  <span aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
-                                  <span class="visually-hidden">
+                                    <svg
+                                            width="1.6rem"
+                                            height="1.6rem"
+                                            viewBox="0 0 16 16"
+                                            aria-hidden="true"
+                                            focusable="false"
+                                    >
+                                      <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
+                                    </svg>
+
+                                    <svg
+                                            aria-hidden="true"
+                                            class="icon icon-checkmark"
+                                            width="1.1rem"
+                                            height="0.7rem"
+                                            viewBox="0 0 11 7"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                    <span aria-hidden="true">{{ value.label | escape }}</span>
+                                    <span class="visually-hidden">
                                     {{- value.label | escape }} (
                                     {%- if value.count == '1' -%}
                                       {{- 'products.facets.product_count_simple.one' | t: count: value.count -}}
@@ -721,8 +780,9 @@
                                       {{- 'products.facets.product_count_simple.other' | t: count: value.count -}}
                                     {%- endif -%}
                                     )</span
-                                  >
-                                </label>
+                                    >
+                                  </label>
+                                {% endif %}
                               </li>
                             {%- endfor -%}
                           </ul>
