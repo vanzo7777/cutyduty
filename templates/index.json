@@ -5,7 +5,6 @@
       "blocks": {
         "becff066-ab38-4fb4-91e0-b91ac2489e05": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/145_2e75c396-b96d-4f00-a866-c008b3ab46ed.jpg",
             "heading": "<em><strong>Discover Your Signature Look<\/strong><\/em>",
@@ -25,7 +24,6 @@
         },
         "template--20651489788186__2d37c824-7ca9-4836-9ecc-8b38f5764b30-slide-2": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/photo_5352932464332493444_y_b8e2dbf6-a919-4245-80b5-114bc91822b1.webp",
             "heading": "<em><strong>Fashion Is Your Voice<\/strong><\/em>",
@@ -45,6 +43,7 @@
         },
         "slide_8xtwXa": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/405.webp",
             "heading": "<em><strong>Valentine's Day Collection <\/strong><\/em>",
@@ -64,6 +63,7 @@
         },
         "slide_XRDmRe": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/photo_5474634614682276688_y_66b66c80-4e8a-43ff-98ba-d7ccf6e89300.jpg",
             "heading": "<em><strong>Limited Time Only<\/strong><\/em>",
@@ -90,7 +90,7 @@
             "heading_size": "h2",
             "subheading": "",
             "button_label": "Shop Now",
-            "link": "shopify:\/\/collections\/art",
+            "link": "shopify:\/\/pages\/play",
             "button_style_secondary": false,
             "box_align": "bottom-left",
             "show_text_box": false,
@@ -149,7 +149,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": true,
+        "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
