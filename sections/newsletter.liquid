@@ -95,6 +95,10 @@
                     {{ form.errors.messages.email -}}
                   </small>
                 {%- endif -%}
+                <small id="errorSubscribed" class="newsletter-form__message form__message hidden" id="Newsletter-error--{{ section.id }}">
+                  {%- render 'icon-error' -%}
+                  {{- 'newsletter.error_already_subscribed' | t }}
+                </small>
               </div>
               {%- if form.posted_successfully? -%}
                 <h3
@@ -119,8 +123,16 @@
     const form = document.querySelector(".newsletter-form");
     const input = form.querySelector("input[name='contact[email]']");
     const button = form.querySelector(".newsletter-form__button");
+    const error = document.getElementById("errorSubscribed");
 
     if(!form || !input) return;
+
+    const live_url = window.location.href;
+    const result = live_url.includes('form_type=customer');
+
+    if(result && input.value !== 0){
+      error.classList.remove('hidden');
+    }
 
     form.addEventListener("submit", (e) => {
       e.preventDefault();

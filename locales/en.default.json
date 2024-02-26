@@ -60,6 +60,7 @@
   "newsletter": {
     "label": "Email",
     "success": "Thanks for subscribing",
+    "error_already_subscribed": "You have already subscribed!",
     "button_label": "Subscribe"
   },
   "accessibility": {
