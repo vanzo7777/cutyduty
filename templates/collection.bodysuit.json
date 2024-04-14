@@ -10,6 +10,7 @@
     },
     "3fd3c37e-c277-4c63-bdb4-cd4b00084b88": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div style=\"position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;\">\n  <video autoplay muted loop playsinline style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; transform: scale(2.8); transform-origin: center 46%;\">\n    <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e307e38e96de4da9842722bacfc07de1.mp4\">\n    Your browser does not support the video tag.\n  <\/video>\n<\/div>",
         "color_scheme": "",

@@ -1,15 +1,8 @@
 {
   "sections": {
-    "banner": {
-      "type": "main-collection-banner",
-      "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "background-1"
-      }
-    },
     "a9fb185c-abd3-4288-affa-75f349857eb1": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div style=\"position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;\">\n  <video autoplay muted loop playsinline style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; transform: scale(3); transform-origin: center 55%;\">\n    <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5efd22f2f0ad48dca1230db969b75986.mp4\">\n    Your browser does not support the video tag.\n  <\/video>\n<\/div>",
         "color_scheme": "",
@@ -22,7 +15,7 @@
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -303,7 +296,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/2_20231206_202214_0001_1.jpg",
             "title": "<strong>NEED HELP?<\/strong>",
-            "text": "<p>Contact us via email at support@cutyduty.com for guaranteed response within 24 hours.<\/p>",
+            "text": "<p>Contact us via email at ask.cutyduty@gmail.com<br\/> for guaranteed response within 24 hours.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -331,10 +324,68 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "collapsible_content_kt4EhX": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_BB3jN4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I wear everyday lingerie during workouts?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, you can. Wearing underwear helps catch some moisture and keeps you comfortable while exercising. If you haven't had any issues with wearing lingerie during your workouts, then you can stick with it. But if you notice you're constantly uncomfortable with your lingerie on during your sessions, then feel free to go pantie-free. <\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Tgz9JG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How often should I replace my everyday underwear?",
+            "icon": "check_mark",
+            "row_content": "<p>According to experts, it is advised you change your everyday underwear every 6 months. And if it's not up to 6 months but it's worn out, has bad elastic and holes, or looks saggy, then it's due for a change. <\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_ekz47A": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How should I store my lingerie when traveling?",
+            "icon": "check_mark",
+            "row_content": "<p>When traveling, you can put your lingerie and best everyday womens underwear in a small travel bag before putting it in your suitcase. That way, it's easy to locate, doesn't fall out during routine checks, or catch your zippers. <\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_BB3jN4",
+        "collapsible_row_Tgz9JG",
+        "collapsible_row_ekz47A"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "banner",
     "a9fb185c-abd3-4288-affa-75f349857eb1",
     "product-grid",
     "d4c7f273-86d0-4eff-b767-7e19fce07c6d",
@@ -345,6 +396,8 @@
     "c7ba7615-5f04-41a9-9a9a-96591faf0fe9",
     "16947145913c6478cf",
     "16947214732bd30908",
-    "35d4edcb-4ee5-4063-8a70-df63d2507c03"
+    "35d4edcb-4ee5-4063-8a70-df63d2507c03",
+    "banner",
+    "collapsible_content_kt4EhX"
   ]
 }

@@ -12,7 +12,7 @@
       "type": "custom-liquid",
       "disabled": true,
       "settings": {
-        "custom_liquid": "<div style=\"position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;\">\n  <video autoplay muted loop playsinline style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; transform: scale(2.9); transform-origin: center 40%;\">\n    <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/42a3c630436841559f16836d21d81651.mp4\">\n    Your browser does not support the video tag.\n  <\/video>\n<\/div>",
+        "custom_liquid": "<div style=\"position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;\">\n  <video autoplay muted loop playsinline style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; transform: scale(3.0); transform-origin: center 45%;\">\n    <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/48a0d0ce7c1741bca668807276e6c60b.mp4\">\n    Your browser does not support the video tag.\n  <\/video>\n<\/div>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52

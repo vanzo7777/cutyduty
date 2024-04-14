@@ -11,7 +11,7 @@
     "a9fb185c-abd3-4288-affa-75f349857eb1": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div style=\"position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;\">\n  <video autoplay muted loop playsinline style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; transform: scale(2.5); transform-origin: center 55%;\">\n    <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/42a3c630436841559f16836d21d81651.mp4\">\n    Your browser does not support the video tag.\n  <\/video>\n<\/div>",
+        "custom_liquid": "<div style=\"position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;\">\n  <video autoplay muted loop playsinline style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; transform: scale(2.5); transform-origin: center 55%;\">\n    <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/715ce1e4d9bc49a9ac50bdafb39182ca.mov\">\n    Your browser does not support the video tag.\n  <\/video>\n<\/div>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
@@ -250,6 +250,9 @@
         "c9b82473-e2ee-49fd-ac1d-67f632cb7380": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
             "html_area": "<a href=\"https:\/\/www.instagram.com\/cuty_duty_official\/\" target=\"_blank\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0736\/0243\/3306\/files\/Untitled_design_30507670-6044-4194-9311-8570db06deac.png?v=1695223739\" alt=\"Follow us on Instagram!\" style=\"width: 100%; max-width: 4194px; height: auto;\">\n<\/a>"
           }
         }

@@ -10,6 +10,7 @@
     },
     "3fd3c37e-c277-4c63-bdb4-cd4b00084b88": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div style=\"position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;\">\n  <video autoplay muted loop playsinline style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; transform: scale(2.9); transform-origin: center 50%;\">\n    <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/9215dc1d8834478dbdc78ca2762eddcd.mp4\">\n    Your browser does not support the video tag.\n  <\/video>\n<\/div>",
         "color_scheme": "",
@@ -22,7 +23,7 @@
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -32,6 +33,35 @@
         "filter_type": "vertical",
         "enable_sorting": true,
         "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_FyBnPW": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Take Panties Set with Huge Discount",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "pants",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -304,7 +334,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/2_20231206_202214_0001_1.jpg",
             "title": "<strong>NEED HELP?<\/strong>",
-            "text": "<p>Contact us via email at support@cutyduty.com for guaranteed response within 24 hours.<\/p>",
+            "text": "<p>Contact us via email at ask.cutyduty@gmail.com<br\/> for guaranteed response within 24 hours.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -338,6 +368,7 @@
     "banner",
     "3fd3c37e-c277-4c63-bdb4-cd4b00084b88",
     "product-grid",
+    "featured_collection_FyBnPW",
     "d4c7f273-86d0-4eff-b767-7e19fce07c6d",
     "a1432bc3-183e-4e35-8e7c-097da44fa16e",
     "aa99af3a-0f68-4866-a28f-14381a6ffd50",

@@ -70,7 +70,7 @@
           "settings": {
             "heading": "How long will it take for my order to arrive?",
             "icon": "question_mark",
-            "row_content": "<p>The standard shipping delivery time varies depending on your location:<\/p><p><strong>Current Processing Time<\/strong>: 1-3 business days<br\/><\/p><ul><li>North America: 5-10 business days<\/li><li>Mainland Europe & UK: 5-10 business days<\/li><li>Oceania: 5-10 business days<\/li><li>Other countries: 5-15 business days<\/li><\/ul>",
+            "row_content": "<p>The standard shipping delivery time varies depending on your location:<\/p><p><strong>Current Processing Time<\/strong>: 1-3 business days<br\/><\/p><ul><li>North America: 8-14 business days<\/li><li>Mainland Europe & UK: 8-14 business days<\/li><li>Oceania: 8-14 business days<\/li><li>Other countries: 8-14 business days<\/li><\/ul><p>*Please note that sometimes, due to high demand and unforeseen circumstances, delivery times may take longer.<br\/><br\/>In such cases, our team will contact you via WhatsApp or email to notify you and propose solutions. Among these will be a full refund upon request. <\/p>",
             "page": ""
           }
         },

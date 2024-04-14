@@ -13,7 +13,7 @@
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -294,7 +294,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/2_20231206_202214_0001_1.jpg",
             "title": "<strong>NEED HELP?<\/strong>",
-            "text": "<p>Contact us via email at support@cutyduty.com for guaranteed response within 24 hours.<\/p>",
+            "text": "<p>Contact us via email at ask.cutyduty@gmail.com<br\/> for guaranteed response within 24 hours.<\/p>",
             "link_label": "",
             "link": ""
           }

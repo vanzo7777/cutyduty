@@ -6,7 +6,7 @@
         "becff066-ab38-4fb4-91e0-b91ac2489e05": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/145_2e75c396-b96d-4f00-a866-c008b3ab46ed.jpg",
+            "image": "shopify:\/\/shop_images\/1_e9e3c1d7-5acc-46e4-8e1e-08e08b559615.jpg",
             "heading": "<em><strong>Discover Your Signature Look<\/strong><\/em>",
             "heading2": "<em><strong>Be Beautiful, Be You! <\/strong><\/em>",
             "heading_size": "h2",
@@ -25,7 +25,7 @@
         "template--20651489788186__2d37c824-7ca9-4836-9ecc-8b38f5764b30-slide-2": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/photo_5352932464332493444_y_b8e2dbf6-a919-4245-80b5-114bc91822b1.webp",
+            "image": "shopify:\/\/shop_images\/2_a8b921f0-5da4-4da4-bc3c-7d68fba5150a.jpg",
             "heading": "<em><strong>Fashion Is Your Voice<\/strong><\/em>",
             "heading2": "",
             "heading_size": "h2",
@@ -122,14 +122,44 @@
     "custom_liquid_mxpdkf": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"masonry-grid\">\n   \n    \n <div class=\"masonry-item\">\n        <a href=\"https:\/\/cutyduty.com\/collections\/ipad-pro\">\n            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0671\/9012\/8890\/files\/4_20240127_190007_0003.jpg?v=1706512496\">\n        <\/a>\n<div class=\"centered-text\">Sport<\/div>\n    <\/div>\n\n\n\n\n <div class=\"masonry-item\">\n        <a href=\"https:\/\/cutyduty.com\/collections\/dresses\">\n            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0671\/9012\/8890\/files\/photo_5255766362633132407_y_6631181a_6944_42c6_8351_02bf6bb96d98.jpg?v=1706512497\">\n        <\/a>\n<div class=\"centered-text\">Dresses<\/div>\n    <\/div>\n\n\n\n\n <div class=\"masonry-item\">\n        <a href=\"https:\/\/cutyduty.com\/collections\/ipad?_pos=1&_psq=roma&_ss=e&_v=1.0\">\n            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0671\/9012\/8890\/files\/2_20240127_190007_0001.jpg?v=1706512496\">\n        <\/a>\n<div class=\"centered-text\">Romantic<\/div>\n    <\/div>\n\n\n\n\n <div class=\"masonry-item masonry-item-large\">\n        <a href=\"https:\/\/cutyduty.com\/pages\/ipad-cases\">\n            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0671\/9012\/8890\/files\/3_20240127_190007_0002.jpg?v=1706512496\">\n        <\/a>\n<div class=\"centered-text\">Lingerie<\/div>\n    <\/div>\n\n\n\n\n\n    <div class=\"masonry-item masonry-item-large\">\n         <a href=\"https:\/\/cutyduty.com\/products\/form-fitting-jumpsuit-beige\">\n            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0671\/9012\/8890\/files\/1_20240127_190006_0000.jpg?v=1706512496\">\n        <\/a>\n<div class=\"centered-text\">New<\/div>\n    <\/div>\n<\/div>",
+        "custom_liquid": "<div class=\"masonry-grid\">\n   \n    \n <div class=\"masonry-item\">\n        <a href=\"https:\/\/cutyduty.com\/collections\/ipad-pro\">\n            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0671\/9012\/8890\/files\/4_20240127_190007_0003.jpg?v=1706512496\">\n        <\/a>\n<div class=\"centered-text\">Sport<\/div>\n    <\/div>\n\n\n\n\n <div class=\"masonry-item\">\n        <a href=\"https:\/\/cutyduty.com\/collections\/dresses\">\n            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0671\/9012\/8890\/files\/photo_2024-03-04_17.31.3712.jpg?v=1709575336\">\n        <\/a>\n<div class=\"centered-text\">Dresses<\/div>\n    <\/div>\n\n\n\n\n <div class=\"masonry-item\">\n        <a href=\"https:\/\/cutyduty.com\/collections\/ipad?_pos=1&_psq=roma&_ss=e&_v=1.0\">\n            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0671\/9012\/8890\/files\/2_20240127_190007_0001.jpg?v=1706512496\">\n        <\/a>\n<div class=\"centered-text\">Romantic<\/div>\n    <\/div>\n\n\n\n\n <div class=\"masonry-item masonry-item-large\">\n        <a href=\"https:\/\/cutyduty.com\/collections\/lingerie\">\n            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0671\/9012\/8890\/files\/3_20240127_190007_0002.jpg?v=1706512496\">\n        <\/a>\n<div class=\"centered-text\">Lingerie<\/div>\n    <\/div>\n\n\n\n\n\n    <div class=\"masonry-item masonry-item-large\">\n         <a href=\"https:\/\/cutyduty.com\/products\/form-fitting-jumpsuit-beige\">\n            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0671\/9012\/8890\/files\/1_20240127_190006_0000.jpg?v=1706512496\">\n        <\/a>\n<div class=\"centered-text\">New<\/div>\n    <\/div>\n<\/div>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
       }
     },
+    "featured_collection_FGrAEj": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Take Panties Set with Huge Discount",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "pants",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection_wpVgUH": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Valentine's Collection",
         "heading_size": "h1",
@@ -185,7 +215,7 @@
         "collection_zw4r8R"
       ],
       "settings": {
-        "heading": "Meet our Best Seller",
+        "heading": "Best Seller Of The Week",
         "heading_size": "h1",
         "desktop_layout": "left",
         "mobile_layout": "collage",
@@ -226,7 +256,7 @@
     "featured_collection_ETRxVT": {
       "type": "featured-collection",
       "settings": {
-        "title": "Which jumpsuit do you like best?",
+        "title": "Which Jumpsuit Do You Like Best?",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -289,7 +319,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/2_20231206_202214_0001_1.jpg",
             "title": "<strong>NEED HELP?<\/strong>",
-            "text": "<p>Contact us via email at support@cutyduty.com for guaranteed response within 24 hours.<\/p>",
+            "text": "<p>Contact us via email at ask.cutyduty@gmail.com<br\/> for guaranteed response within 24 hours.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -363,17 +393,101 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "rich_text_mAd9KV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ppjVcg": {
+          "type": "heading",
+          "settings": {
+            "heading": "CutyDuty - Sexy Outfits Store",
+            "heading_size": "h1"
+          }
+        },
+        "text_7pX4Mr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Picking the right sexy outfit can be daunting for many women. There are concerns about fit, style, and confidence. At CutyDuty, we understand these fears and uncertainties, which is why we curated the perfect clothing collection consisting of the sexiest womens outfits, to inspire every woman to embrace her sensual side with confidence and ease. <\/p><p>Our lingerie and seductive outfits are a pathway to self-assurance and creating unforgettable moments with your partner. Whether you're preparing for a romantic evening at home, a playful beach escapade, or a fun-filled cosplay adventure, CutyDuty is your one-stop sexy clothing store for women. We've got <a href=\"https:\/\/cutyduty.com\/collections\/everyday\"><span style=\"text-decoration:underline\">everyday lingerie<\/span><\/a> that flatters every figure, sexy bodysuits that ignite irresistible imagination, and lots more. This is your invitation to embrace your feminine fire with confidence and enticing appeal.<\/p><h2>Understanding the Appeal of Sexy Outfits from CutyDuty<\/h2><p>CutyDuty's sexy outfits and lingerie are powerfully seductive tools that can boost your self-confidence, highlight your best features, awaken the desires of your partner, and set the pace for an awesome activity. Be it a daring piece or a classic pick, we're big on getting a 'Feel good' feeling anytime you put on a sexy outfit for ladies from our store. That is why we always ensure that our clothing selections can make you feel irresistible while flattering your figure. <\/p><p>It doesn't end with chic outfits. We also have elegant and tempting accessories like fishnet tights, body stockings, and lace robes to finish up your glam looks.<\/p><h2>Types of Sexy Outfits In Our Shop<\/h2><p>CutyDuty has every outfit to fuel your fire and one thing you can always count on here is the luxury of choice. You can explore our exquisite selections from the delicate lace lingerie and sleek satin sets, to the daring leather staples and classic designs. Whatever the style you’re looking for, we have something for everyone; every curve and contour in different styles and fabric choices. Here are some of our unique pieces in our sexy clothes store:<\/p><ul><li>Lingeries: Sexy mini shirt and pantie sets, seductive lace up chemises, play sets, and lace robes are all available for you to explore your erotic fantasies. We also have lace bras with thong and slip pantie sets that are undeniably one of the snazziest in stores. If any of your girls have a wedding coming up soon, our <a href=\"https:\/\/cutyduty.com\/collections\/bridal-lingerie\"><span style=\"text-decoration:underline\">bridal lingerie<\/span><\/a> may be the perfect gift to get her to Cloud Nine.<\/li><li>Bodysuits: We’ve got bodysuits that you can wear daily because of their comfortable fit and smooth feel on the body. And if you’ve been looking for a sleek bodysuit to pair with your jeans, our ‘Elegance in Noir’ sets hit differently.<\/li><li>Swimwear: For your swim lessons, beach dates, poolside parties, and all underwater pleasures, our bikinis and beach cover-ups are a total blast.  There are animal prints, classic black and neutrals, hot pink, and floral swim staples that you can wear to show off your awesome body when you’re in the mood to bare. And our swimsuits? They are to die for! We’ve got a variety of styles from two-piece bikinis to body-skimming bathsuits.<\/li><li>Roleplay Costumes: Playing dress up for your cosplays, role plays, and Halloween? You can buy sexy clothes that are wild, incredibly seductive, and sensual from us.<\/li><li>Sports Underwear Sets: It’s high time you ditched your boring and loose gym wear and copped some cutyduty sports outfits. They are perfect for flaunting your gains and comfortable for all your sports activities. Besides, who doesn’t love a hot body in figure-defining sports lingerie?<\/li><li>Alluring Dresses: Our romantic dresses are so on point that we bet you’re going to come back for more. Whether casual or upbeat, we’re up for the task. For a super snatched sexy vibe, we’ve got hot dresses with cut-out, ribbed, knit, mirage, thigh slit, open back, sequin, corset, and off-shoulder details amongst others. Then when you’re switching to an elegant baddie for work and formal events, you can wear our sexy clothes for females with features like lush satin, soft velvet, midi length, rhinestone embellishments, bandage, and leather.<\/li><li>Jumpsuits: Jumpsuits are functional, flattering, and sexy outfits to buy, and we made sure to stock up on chic and snazzy styles for our fashion girlies. We’ve got form-fitting jumpsuits for your morning runs and casual errands and thick hooded jumpsuits to keep you warm during the cold season.  <\/li><\/ul><h2>Tips for Choosing the Perfect Sexy Outfit<\/h2><p>Shopping lingerie may be an opportunity for you to feel irresistible or fan your passion flames. But poorly fitting clothes, and colours that don't match the mood, the occasion, or your personality can largely impact your confidence level in the outfit. Here are some tips to keep in mind when buying sexy outfits for women:<\/p><ul><li>Sizing: Your body size matters when you're picking any outfit. You should know your bust, waist, and hip measurements so you can easily choose the perfect sexy outfit for you. To ensure our customers have a flattering fit from all their clothing purchases, we have a body size chart on every outfit.  <\/li><li>Undersize: For that perfect snatched silhouette, you can opt for an outfit that is a little less than your actual size. This works well for athletic outfits and bodycon dresses, but be sure not to overdo it as it may be too tight and uncomfortable.<\/li><li>What to Highlight: Before you choose an outfit, you have to know your own body. There may be areas you want to show off and features you wish to conceal. Hence, you should buy sexy clothes that are in line with these in mind. <\/li><li>What's the Occasion: There are lots of styles when it comes to sexy outfits. For lingerie alone, you can find bra and pantie sets, garter belts, peignoirs, and body stockings. You can explore the available options to find the style that matches the mood you wish to create and the occasion you're dressing for. It may be for a special occasion like Valentines', birthdays or anniversaries. That extra effort to look special and not in your regular bra and pantie would spice up the night. <\/li><li>Colour Selection: Black, white, red, and pastel tones are so common with sexy clothes for females. They are all alluring and sensual to wear, so it's left for you to make a pick depending on how fierce you want to make your looks.<\/li><li>Choosing the Sexiest Briefs: If you're looking to try out something new, buying the sexiest womens outfits can create an element of surprise for your partner. You could also try some new accessories in fiery red to impress your partner and create an audacious air in your bedroom. <\/li><li>Trendy Styles and Cosplay Costumes: You could try different themes and trends in your bedroom like playing a naughty maid in a bunny costume or a flight attendant in a skimpy outfit. Trendy styles that accentuate your body can also create those intimate moments with your partner. <\/li><\/ul><h2>Where to Find Sexy Outfits<\/h2><p>CutyDuty is a sexy clothes online shop where you can get high-quality lingerie and sexy attire that feels like a second skin while boosting your sensuality. We are not just a lingerie store, we are passionately driven to curate sultry and stylish outfits that every woman would love to wear with confidence. In every stitch and lace, we can boast that our sexy outfits are a symphony of luxury and allure. Whether it's in the bedroom or strutting down the street, you can wear our sexy clothing for ladies, feeling empowered, beautiful, and seductive. From the Greatest and Silent generations to the modern Gen Z woman, CutyDuty celebrates every curve and shape with our inclusive collections. There are no bounds to the beauty you can curate when you don a sleek outfit from our sexy outfit shop.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ppjVcg",
+        "text_7pX4Mr"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collapsible_content_kyxmD3": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_ekUUMM": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can anyone wear a sexy outfit, regardless of body type?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, anyone can wear a sexy outfit, regardless of their body type. Thanks to our inclusive policy, we've got outfits for different body types, sizes, and curves to allow every woman an opportunity to tap into their sensual femininity.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_AzYrk7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can I feel more confident in a sexy outfit?",
+            "icon": "check_mark",
+            "row_content": "<p>The outfits in your seduction arsenal can impact your confidence level in them. When choosing sexy outfits for females and lingerie, opt for styles that accentuate your best features and also have a perfect fitting. Whimsical colours also gear up your mood and make you feel confident and at your sexiest. <\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_RgWfGG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are there any age restrictions for wearing sexy outfits?",
+            "icon": "check_mark",
+            "row_content": "<p>There are no age restrictions to wearing sexy and revealing clothes, however, it is more appropriate if the wearer is at least 18 years old. But when it comes to good fashion, there is no age cap and anyone can wear an outfit that makes them feel at their best. <\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_ekUUMM",
+        "collapsible_row_AzYrk7",
+        "collapsible_row_RgWfGG"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "2d37c824-7ca9-4836-9ecc-8b38f5764b30",
     "custom_liquid_mxpdkf",
+    "featured_collection_FGrAEj",
     "featured_collection_wpVgUH",
     "collage_9Qmgf8",
     "55a7cbce-641a-4f23-95cf-efb3557c4a2e",
     "featured_collection_ETRxVT",
     "3d99743c-a5f0-4ee7-91d7-6d2d6b4447a9",
     "2ea54725-3baa-4483-9663-fc2d247945d4",
-    "1706619260a23393eb"
+    "1706619260a23393eb",
+    "rich_text_mAd9KV",
+    "collapsible_content_kyxmD3"
   ]
 }

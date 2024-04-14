@@ -10,6 +10,7 @@
     },
     "3fd3c37e-c277-4c63-bdb4-cd4b00084b88": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div style=\"position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;\">\n  <video autoplay muted loop playsinline style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; transform: scale(2.8); transform-origin: center 26%;\">\n    <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5b004e021078412ea8fc8a01fe67cd73.mp4\">\n    Your browser does not support the video tag.\n  <\/video>\n<\/div>",
         "color_scheme": "",
@@ -22,7 +23,7 @@
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -303,7 +304,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/2_20231206_202214_0001_1.jpg",
             "title": "<strong>NEED HELP?<\/strong>",
-            "text": "<p>Contact us via email at support@cutyduty.com for guaranteed response within 24 hours.<\/p>",
+            "text": "<p>Contact us via email at ask.cutyduty@gmail.com<br\/> for guaranteed response within 24 hours.<\/p>",
             "link_label": "",
             "link": ""
           }

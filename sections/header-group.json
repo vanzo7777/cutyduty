@@ -36,6 +36,7 @@
         },
         "announcement_eCnqdb": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Welcome to our store",
             "link": ""
@@ -43,6 +44,7 @@
         },
         "b8edcafd-c379-475d-af22-b67f32e0d79d": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "LUXURY GIFT BOX FOR ORDERS OVER 130$",
             "link": ""

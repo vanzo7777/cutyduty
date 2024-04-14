@@ -59,7 +59,7 @@
           "type": "text",
           "settings": {
             "heading": "CONTACT DETAILS",
-            "subtext": "<p><strong>Email: <\/strong>support@cutyduty.com<a href=\"mailto:hello@izytools.com\" target=\"_blank\" title=\"mailto:hello@izytools.com\"><br\/><\/a><strong>Mobile:<\/strong> + 1 209 730 3727<br\/><strong>Mailing Address: <br\/><\/strong>2679 Main Street<br\/>Littleton, CO 80120<\/p>"
+            "subtext": "<p><strong>Email: <\/strong>ask.cutyduty@gmail.com<br\/><strong>Mailing Address: <br\/><\/strong>27, Old Gloucester Street<br\/>LONDON<br\/>WC1N 3AX<br\/>UNITED KINGDOM<\/p>"
           }
         }
       },
@@ -74,7 +74,7 @@
         "newsletter_heading": "",
         "enable_follow_on_shop": true,
         "show_social": true,
-        "enable_country_selector": true,
+        "enable_country_selector": false,
         "enable_language_selector": true,
         "payment_enable": true,
         "show_policy": false,

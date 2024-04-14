@@ -1,8 +1,8 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/20231220_115850_0006_1.jpg",
+    "logo": "shopify:\/\/shop_images\/download.jpg",
     "logo_width": 200,
-    "favicon": "shopify:\/\/shop_images\/Favicon_circle_Logos_CutyDuty_88753146-6412-429f-a2dd-8d79fa1717f6.png",
+    "favicon": "shopify:\/\/shop_images\/Screenshot_2024-03-30_at_13.55.49-modified.png",
     "type_header_font": "roboto_n4",
     "heading_scale": 135,
     "type_body_font": "open_sans_n4",
@@ -168,6 +168,12 @@
           "blacklisted_collections": [
 
           ]
+        }
+      },
+      "14060646107696862457": {
+        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
         }
       }
     },
