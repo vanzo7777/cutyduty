@@ -1,0 +1,178 @@
+{% liquid
+    assign image = section.settings.image
+    assign heading = section.settings.heading | default: 'Heading'
+    assign subheading = section.settings.subheading
+    assign placeholder = section.settings.placeholder | default: 'Enter your Email'
+    assign btn_text = section.settings.btn_text | default: 'Get My Coupon'
+    assign terms = section.settings.terms
+    assign close_popup_text = section.settings.close_popup_text | default: 'No thanks, I just want to make a purchase.'
+    assign success_heading = section.settings.success_heading | default: 'Heading'
+    assign success_subheading = section.settings.success_subheading
+    assign discount = section.settings.discount
+%}
+
+{{ 'popups.css' | asset_url | stylesheet_tag }}
+
+<section id="timeoutPopup" class="popup">
+    <div class="popup__content">
+        <div class="popup__wrapper">
+            <button
+                    data-close-popup="#timeoutPopup"
+                    type="button"
+                    class="popup__close"
+                    aria-label="{{ 'accessibility.close' | t }}"
+            >
+                {% render 'icon-close' %}
+            </button>
+
+            {% if image != blank %}
+                <div class="popup__col popup__col--image">
+                    <img src="{{ image | image_url: width: 380 }}" alt="{{ image.alt }}">
+                </div>
+            {% endif %}
+
+            <div class="popup__col popup__col--content" data-first-step>
+                <h2 class="popup__heading">
+                    {{ heading }}
+                </h2>
+
+                {% if subheading != blank %}
+                    <div class="popup__subheading">
+                        {{ subheading }}
+                    </div>
+                {% endif %}
+
+                <form
+                        action=""
+                        method="post"
+                        class="customer popup__form"
+                        data-newsletter-form>
+                    <div class="field">
+                        <input
+                                id="popupInput"
+                                class="field__input"
+                                aria-label="Email"
+                                type="email"
+                                placeholder="Email"
+                                required
+                        />
+
+                        <label class="" for="popupInput">
+                            {{ placeholder }}
+                        </label>
+                    </div>
+
+                    <button class="popup__submit" type="submit">
+                        {{ btn_text }}
+                    </button>
+
+                    {% if terms != blank %}
+                        <div class="popup__privacy">
+                            {{ terms }}
+                        </div>
+                    {% endif %}
+                </form>
+
+                <a
+                        class="link popup__close-link"
+                        role="button"
+                        data-close-popup="#timeoutPopup"
+                        href="#"
+                >
+                    {{ close_popup_text }}
+                </a>
+            </div>
+
+            <div class="popup__col popup__col--content hidden" data-second-step>
+                <h2 class="popup__heading">
+                    {{ success_heading }}
+                </h2>
+
+                {% if success_subheading != blank %}
+                    <div class="popup__subheading">
+                        {{ success_subheading }}
+                    </div>
+                {% endif %}
+
+                <div class="popup__discount">
+                    <input aria-label="Discount" type="text" data-copy-input value="{{ discount }}" readonly disabled>
+                    <div class="popup__discount-wrapper">
+                        <div class="popup__tooltip" data-tooltip>Copied!</div>
+
+                        <button class="popup__discount-copy" data-copy>
+                            <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                 fill="currentColor" viewBox="0 0 18 20">
+                                <path d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="{{ 'popups.js' | asset_url }}" defer="defer"></script>
+
+{% schema %}
+{
+  "name": "Timeout popup",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "placeholder",
+      "label": "Input placeholder"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button text"
+    },
+    {
+      "type": "richtext",
+      "id": "terms",
+      "label": "Terms text"
+    },
+    {
+      "type": "text",
+      "id": "close_popup_text",
+      "label": "Text of the link to close the popup"
+    },
+    {
+      "type": "header",
+      "content": "Success step settings"
+    },
+    {
+      "type": "text",
+      "id": "success_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "success_subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "discount",
+      "label": "Discount code"
+    }
+  ]
+}
+{% endschema %}
