@@ -17,7 +17,7 @@
 
 {% assign faqs = collection.metafields.custom.faq_list.value %}
 
-{% if faqs != blank %}
+{% if faqs != blank and current_page == 1 %}
   <div class="color-{{ section.settings.color_scheme }} gradient">
     <div class="collapsible-content collapsible-{{ section.settings.layout }}-layout isolate{% if section.settings.layout == 'section' %} page-width{% elsif section.settings.layout == 'none' %} content-container content-container--full-width{% endif %}">
       <div class="collapsible-content__wrapper section-{{ section.id }}-padding{% if section.settings.layout == 'section' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}">
@@ -105,6 +105,25 @@
   </div>
 {% endif %}
 
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {% for block in faqs %}
+        {
+          "@type": "Question",
+          "name": {{ block.faq_title | escape | json }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{{ block.faq_content | escape  }}"
+          }
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+</script>
 
 
 {% schema %}
