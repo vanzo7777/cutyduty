@@ -1,13 +1,5 @@
 {
   "sections": {
-    "banner": {
-      "type": "main-collection-banner",
-      "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "background-1"
-      }
-    },
     "3fd3c37e-c277-4c63-bdb4-cd4b00084b88": {
       "type": "custom-liquid",
       "disabled": true,
@@ -332,10 +324,68 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "collapsible_content_mk3w4f": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_FqFxw3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are bodysuits comfortable to wear all day?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, bodysuits are comfortable to wear all day, depending on the fabric and fit. Cotton and mesh fabrics are ideal for an everyday bodysuit.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_rNrTgC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I wear a bodysuit as lingerie?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, you can wear a bodysuit as lingerie.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_9t9tUX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I care for my bodysuits to make them last longer?",
+            "icon": "check_mark",
+            "row_content": "<p>To make your bodysuits last longer, follow the care instructions on the label and avoid harsh washing methods. Fabrics that are machine washable and low-maintenance are more convenient.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_FqFxw3",
+        "collapsible_row_rNrTgC",
+        "collapsible_row_9t9tUX"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "banner",
     "3fd3c37e-c277-4c63-bdb4-cd4b00084b88",
     "product-grid",
     "d4c7f273-86d0-4eff-b767-7e19fce07c6d",
@@ -346,6 +396,8 @@
     "c7ba7615-5f04-41a9-9a9a-96591faf0fe9",
     "16947145913c6478cf",
     "16947214732bd30908",
-    "35d4edcb-4ee5-4063-8a70-df63d2507c03"
+    "35d4edcb-4ee5-4063-8a70-df63d2507c03",
+    "banner",
+    "collapsible_content_mk3w4f"
   ]
 }
