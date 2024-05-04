@@ -1,0 +1,71 @@
+{% assign linked_products = product.metafields.custom.linked_products.value %}
+
+
+{% if linked_products != blank %}
+    <div class="linked-products">
+        <legend class="form__label">Color</legend>
+
+        <div class="linked-products__row">
+            <div class="linked-products__item current">
+                <div class="linked-products__img-wrapper">
+                    <img src="{{ product.featured_image | img_url: width: 60 }}" alt="">
+                </div>
+            </div>
+
+            {% for linked_product in linked_products %}
+                <div class="linked-products__item">
+                    <a href="{{ linked_product.url }}" class="linked-products__img-wrapper">
+                        <img src="{{ linked_product.featured_image | img_url: width: 60 }}" alt="">
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <style>
+      .product-form__input--color {
+        display: none;
+      }
+
+      .linked-products__row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .linked-products__item {
+        width: 60px;
+        border: 2px solid rgba(var(--color-foreground), var(--variant-pills-border-opacity));
+        transition: .1s linear border-color;
+      }
+
+      .linked-products__item:hover {
+        border-color: rgb(var(--color-foreground));
+      }
+
+      .linked-products__item.current {
+        border-color: rgb(var(--color-foreground));
+      }
+
+      .linked-products__item.current:hover {
+        border-color:rgb(var(--color-foreground));
+      }
+
+      .linked-products__img-wrapper {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding-top: 125%;
+      }
+
+      .linked-products__img-wrapper img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+{% endif %}
+

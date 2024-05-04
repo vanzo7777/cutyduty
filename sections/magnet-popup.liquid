@@ -1,0 +1,144 @@
+{% liquid
+    assign show_popup = section.settings.show_popup
+    assign image = section.settings.image
+    assign heading = section.settings.heading | default: 'Heading'
+    assign subheading = section.settings.subheading
+    assign close_popup_text = section.settings.close_popup_text | default: 'No thanks, I just want to make a purchase.'
+%}
+
+{% if show_popup %}
+    {{ 'popups.css' | asset_url | stylesheet_tag }}
+
+    <style>
+      .popup {
+        opacity: 0;
+        visibility: hidden;
+      }
+    </style>
+
+    <section id="magnetPopup" class="popup">
+        <div class="popup__content">
+            <div class="popup__wrapper">
+                <button
+                        data-close-popup="#magnetPopup"
+                        type="button"
+                        class="popup__close"
+                        aria-label="{{ 'accessibility.close' | t }}"
+                >
+                    {% render 'icon-close' %}
+                </button>
+
+                {% if image != blank %}
+                    <div class="popup__col popup__col--image">
+                        <img src="{{ image | image_url: width: 380 }}" alt="{{ image.alt }}">
+                    </div>
+                {% endif %}
+
+                <div class="popup__col popup__col--content">
+                    <h2 class="popup__heading">
+                        {{ heading }}
+                    </h2>
+
+                    {% if subheading != blank %}
+                        <div class="popup__subheading">
+                            {{ subheading }}
+                        </div>
+                    {% endif %}
+
+                    {% for block in section.blocks %}
+                        {% assign text = block.settings.text %}
+                        {% assign href = block.settings.reference.url %}
+
+                        {% if text != blank and href != blank %}
+                            <a href="{{ href }}" class="popup__cta">
+                                {{ text }}
+                            </a>
+                        {% endif %}
+                    {% endfor %}
+
+                    <a
+                            class="link popup__close-link"
+                            role="button"
+                            data-close-popup="#magnetPopup"
+                            href="#"
+                    >
+                        {{ close_popup_text }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="{{ 'magnet-popup.js' | asset_url }}" defer="defer"></script>
+{% endif %}
+
+
+{% schema %}
+{
+  "name": "Magnet popup",
+  "max_blocks": 1,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_popup",
+      "label": "Show popup?"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "close_popup_text",
+      "label": "Text of the link to close the popup"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product_link",
+      "name": "Product link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Button text",
+          "label": "Text"
+        },
+        {
+          "type": "product",
+          "id": "reference",
+          "label": "Link"
+        }
+      ]
+    },
+    {
+      "type": "collection_link",
+      "name": "Collection link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Button text",
+          "label": "Text"
+        },
+        {
+          "type": "collection",
+          "id": "reference",
+          "label": "Link"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -5,6 +5,7 @@
     "timeout-popup": {
       "type": "timeout-popup",
       "settings": {
+        "show_popup": true,
         "image": "shopify:\/\/shop_images\/photo1694514830_1.jpg",
         "heading": "Claim your exclusive discount",
         "subheading": "<p>Sign up for the newsletter and get 10% off with this exclusive offer. Enter your e-mail to receive the code.<\/p>",
@@ -16,9 +17,32 @@
         "success_subheading": "<p>Copy your discount code.<\/p>",
         "discount": "CUTYDUTYNEWS10%"
       }
+    },
+    "magnet-popup": {
+      "type": "magnet-popup",
+      "blocks": {
+        "product_link_UmfRg6": {
+          "type": "product_link",
+          "settings": {
+            "text": "Button text",
+            "reference": "black-lace-delight-sensual-lingerie-set-bralette-and-panties"
+          }
+        }
+      },
+      "block_order": [
+        "product_link_UmfRg6"
+      ],
+      "settings": {
+        "show_popup": true,
+        "image": "shopify:\/\/shop_images\/photo1698324980_2_904ae636-afac-4686-a38e-71f17a31e81f.jpg",
+        "heading": "We have a unique offer for you!",
+        "subheading": "<p>Follow the link and get the product at a unique discount!<\/p>",
+        "close_popup_text": "No thanks, I just want to make a purchase."
+      }
     }
   },
   "order": [
-    "timeout-popup"
+    "timeout-popup",
+    "magnet-popup"
   ]
 }

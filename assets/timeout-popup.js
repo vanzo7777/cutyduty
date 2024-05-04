@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const {setCookie,checkCookie} = window.CookieClass;
+
     const selectors = {
         timeoutPopup: '#timeoutPopup',
+        magnetPopup: '#magnetPopup',
         popupClose: '[data-close-popup]',
         form: '[data-newsletter-form]',
         firstStep: '[data-first-step]',
@@ -11,6 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const form = document.querySelector(selectors.form);
+    const emailInput = form.querySelector('input[type="email"]');
+    const submitBtn = form.querySelector('button');
     const firstStep = document.querySelector(selectors.firstStep);
     const secondStep = document.querySelector(selectors.secondStep);
 
@@ -20,33 +25,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const COOKIE_NAME = `show-${copyBtnInput.value}`
 
-    function checkCookie() {
-        const popupShown = getCookie(COOKIE_NAME);
-
-        return !!(popupShown && popupShown === "true");
-    }
-
-    function setCookie(cname, cvalue, exdays) {
-        const d = new Date();
-        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-        const expires = "expires=" + d.toUTCString();
-        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-    }
-
-    function getCookie(name) {
-        const regex = new RegExp(`(^| )${name}=([^;]+)`)
-        const match = document.cookie.match(regex)
-        if (match) {
-            return match[2]
-        }
-    }
-
     function showPopup(selector) {
         const popup = document.querySelector(selector);
 
-        if (popup && !checkCookie()) {
+        if (popup && !checkCookie(COOKIE_NAME)) {
             setCookie(COOKIE_NAME, "true", 30);
-
             popup.classList.add('open');
             document.body.classList.add('overflow-hidden');
         }
@@ -72,13 +55,27 @@ document.addEventListener("DOMContentLoaded", () => {
         closePopup(selectors.timeoutPopup);
     });
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit',  (e) => {
         e.preventDefault();
 
-        // TODO SUBMIT LOGIC
+        let formData = new FormData();
 
-        firstStep.classList.add('hidden');
-        secondStep.classList.remove('hidden');
+        formData.append("email", emailInput.value);
+        formData.append("newsletter", 'true');
+
+        submitBtn.innerHTML = `<span class="loader"></span>`;
+        submitBtn.disabled = true;
+
+        fetch('https://script.google.com/macros/s/AKfycbyB3Vnt_d0mcytrl6nFkhBsgp21vbWXyBZVAuSMg70o3mXriT9DBivXRULvI71d1LeRaA/exec',
+            {
+                method: "POST",
+                body: formData,
+                mode: 'no-cors'
+            }
+        ).then(r => {
+            firstStep.classList.add('hidden');
+            secondStep.classList.remove('hidden');
+        })
     });
 
     copyBtn.addEventListener('click', (e) => {
@@ -95,6 +92,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     setTimeout(() => {
-        showPopup(selectors.timeoutPopup)
+        const magnetPopup = document.querySelector(selectors.magnetPopup);
+
+        if(magnetPopup && magnetPopup.classList.contains('open')) {
+            return;
+        }
+
+        showPopup(selectors.timeoutPopup);
     }, 15000);
 });

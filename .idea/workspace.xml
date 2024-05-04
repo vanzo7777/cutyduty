@@ -6,7 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="48d9b9b4-21c7-41b7-979f-1c78d4d78ada" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/popups.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/popups.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/popups.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/timeout-popup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layout/theme.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/layout/theme.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/main-product.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/main-product.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/newsletter.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/newsletter.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/popup-group.json" beforeDir="false" afterPath="$PROJECT_DIR$/sections/popup-group.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/timeout-popup.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/timeout-popup.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snippets/product-variant-picker.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/product-variant-picker.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article.json" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog.json" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/collection.clothes.json" beforeDir="false" afterPath="$PROJECT_DIR$/templates/collection.clothes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product.beginner-s-bra-black.json" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product.beginner-s-bra-black.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product.ipad-pro-12-9-black.json" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product.ipad-pro-12-9-black.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +65,7 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projects\secondary\cutyduty\sections" />
       <recent name="C:\Projects\secondary\cutyduty\assets" />
+      <recent name="C:\Projects\secondary\cutyduty\snippets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projects\secondary\cutyduty\sections" />
@@ -69,6 +83,15 @@
       <workItem from="1708705435383" duration="3941000" />
       <workItem from="1708709760729" duration="475000" />
       <workItem from="1708712171638" duration="5539000" />
+      <workItem from="1713163064519" duration="14000" />
+      <workItem from="1713282009813" duration="6124000" />
+      <workItem from="1713336151967" duration="3000" />
+      <workItem from="1713599978496" duration="5150000" />
+      <workItem from="1713765914617" duration="4000" />
+      <workItem from="1714215792401" duration="7931000" />
+      <workItem from="1714372235432" duration="5000" />
+      <workItem from="1714748712541" duration="2759000" />
+      <workItem from="1714810614958" duration="1848000" />
     </task>
     <servers />
   </component>
