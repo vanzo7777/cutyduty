@@ -31,7 +31,6 @@
           value=""
           name="email"
           id="RecoverEmail"
-          autocorrect="off"
           autocapitalize="off"
           autocomplete="email"
           {% if form.errors %}
@@ -102,7 +101,6 @@
           name="customer[email]"
           id="CustomerEmail"
           autocomplete="email"
-          autocorrect="off"
           autocapitalize="off"
           {% if form.errors contains 'form' %}
             aria-invalid="true"

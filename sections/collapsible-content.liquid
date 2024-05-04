@@ -29,9 +29,9 @@
             </p>
           {% endif %}
           {%- if section.settings.heading != blank -%}
-            <h2 class="collapsible-content__heading inline-richtext {{ section.settings.heading_size }}">
+            <h1 class="collapsible-content__heading inline-richtext {{ section.settings.heading_size }}">
               {{ section.settings.heading }}
-            </h2>
+            </h1>
           {%- else -%}
             <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
           {% endif %}
@@ -83,9 +83,9 @@
                 >
                   <summary id="Summary-{{ block.id }}-{{ section.id }}">
                     {% render 'icon-accordion', icon: block.settings.icon %}
-                    <h3 class="accordion__title inline-richtext h4">
+                    <div class="accordion__title inline-richtext h4">
                       {{ block.settings.heading | default: block.settings.page.title }}
-                    </h3>
+                    </div>
                     {% render 'icon-caret' %}
                   </summary>
                   <div
@@ -106,6 +106,79 @@
     </div>
   </div>
 </div>
+
+<script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+	"@type": "Question",
+	"name": "How to choose the right size?",
+	"acceptedAnswer": {
+  	"@type": "Answer",
+  	"text": "Use our size chart for accurate selection. If in doubt, contact our specialist."
+	}
+  },{
+	"@type": "Question",
+	"name": "What materials are used in the lingerie?",
+	"acceptedAnswer": {
+  	"@type": "Answer",
+  	"text": "We use high-quality materials, including cotton, microfiber, and lace, to ensure maximum comfort and style."
+	}
+  },{
+	"@type": "Question",
+	"name": "How to care for the lingerie?",
+	"acceptedAnswer": {
+  	"@type": "Answer",
+  	"text": "Follow the instructions on the label. Usually, our lingerie can be machine-washed, but it is recommended to use a gentle cycle."
+	}
+  },{
+	"@type": "Question",
+	"name": "What types of bras do you have?",
+	"acceptedAnswer": {
+  	"@type": "Answer",
+  	"text": "We offer a variety of styles, including push-up, seamless, sports bras, and many more. Check our catalog for the full selection."
+	}
+  },{
+	"@type": "Question",
+	"name": "Is there free shipping?",
+	"acceptedAnswer": {
+  	"@type": "Answer",
+    "text": "Yes, we provide free shipping for orders above a certain amount. Details can be found on our website."
+	}
+  },{
+	"@type": "Question",
+	"name": "How to stay informed about new arrivals?",
+	"acceptedAnswer": {
+  	"@type": "Answer",
+  	"text": "Subscribe to our newsletter and follow our social media to be the first to know about new arrivals and promotions."
+	}
+  },{
+	"@type": "Question",
+	"name": "How long will it take for my order to arrive?",
+	"acceptedAnswer": {
+  	"@type": "Answer",
+  	"text": "The standard shipping delivery time varies depending on your location:
+Current Processing Time: 1-3 business days;
+North America: 5-10 business days;
+Mainland Europe & UK: 5-10 business days;
+Oceania: 5-10 business days;
+Other countries: 5-15 business days."
+	}
+  },{
+	"@type": "Question",
+	"name": "What is your return policy?",
+	"acceptedAnswer": {
+  	"@type": "Answer",
+  	"text": "Video proof of a defect ensures a smooth return. To initiate a return or warranty claim, please contact us via ask.cutyduty@gmail.com. We will respond within 24 hours to your request."
+	}
+  }]
+}
+</script>
+
+
+
 
 {% schema %}
 {
