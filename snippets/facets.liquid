@@ -46,22 +46,22 @@
             {% endif %}
           >
             {%- if filter_type == 'horizontal' and results.filters != empty -%}
-              <h2 class="facets__heading caption-large text-body" id="verticalTitle" tabindex="-1">
+              <div class="facets__heading caption-large text-body" id="verticalTitle" tabindex="-1">
                 {{ 'products.facets.filter_by_label' | t }}
-              </h2>
+              </div>
             {%- endif -%}
             {% comment %} Pills are right below the title for filter type vertical {% endcomment %}
             {%- if filter_type == 'vertical' -%}
               <div class="active-facets active-facets-desktop">
                 <div class="active-facets-vertical-filter">
                   {%- unless results.filters == empty -%}
-                    <h2
+                    <div
                       class="facets__heading facets__heading--vertical caption-large text-body"
                       id="verticalTitle"
                       tabindex="-1"
                     >
                       {{ 'products.facets.filter_by_label' | t }}
-                    </h2>
+                    </div>
                   {%- endunless -%}
                   <facet-remove class="active-facets__button-wrapper">
                     <a href="{{ results_url }}" class="active-facets__button-remove underlined-link">
@@ -126,7 +126,7 @@
                       class="facets__summary caption-large focus-offset"
                       aria-label="{{ filter.label }} ({{ 'products.facets.filters_selected.one' | t: count: filter.active_values.size }})"
                     >
-                      <div>
+                      <span>
                         <span>
                           {{- filter.label | escape }}
                           {%- if filter_type == 'vertical' -%}
@@ -136,7 +136,7 @@
                           {%- endif -%}
                         </span>
                         {% render 'icon-caret' %}
-                      </div>
+                      </span>
                     </summary>
                     <div
                       id="Facet-{{ forloop.index }}-{{ section.id }}"
@@ -183,9 +183,9 @@
                                             {% endif %}
                                     >
 
-                                  <div class="filter-swatch {% if value_down == 'white' %}filter-swatch--transparent{% endif %}"  style="background: url('{{ valuet  | file_img_url }}')">
+                                  <span class="filter-swatch {% if value_down == 'white' %}filter-swatch--transparent{% endif %}"  style="background: url('{{ valuet  | file_img_url }}')">
 
-                                  </div>
+                                  </span>
 
                                   <span aria-hidden="true">{{ value.label | escape }}</span>
                               </label>
@@ -349,10 +349,10 @@
                     {% endif %}
                   >
                     <summary class="facets__summary caption-large focus-offset">
-                      <div>
+                      <span>
                         <span>{{ filter.label | escape }}</span>
                         {% render 'icon-caret' %}
-                      </div>
+                      </span>
                     </summary>
                     <div
                       id="Facet-{{ forloop.index }}-{{ section.id }}"
@@ -495,9 +495,9 @@
           {%- if enable_sorting -%}
             <div class="facet-filters sorting caption">
               <div class="facet-filters__field">
-                <h2 class="facet-filters__label caption-large text-body">
+                <p class="facet-filters__label caption-large text-body">
                   <label for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
-                </h2>
+                </p>
                 <div class="select">
                   {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
                   <select
@@ -529,7 +529,7 @@
             </div>
           {%- endif -%}
           <div class="product-count light" role="status">
-            <h2 class="product-count__text text-body">
+            <div class="product-count__text text-body">
               <span id="ProductCountDesktop">
                 {%- if results.results_count -%}
                   {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
@@ -542,7 +542,7 @@
                   }}
                 {%- endif -%}
               </span>
-            </h2>
+            </div>
             <div class="loading-overlay__spinner">
               <svg
                 aria-hidden="true"
@@ -564,9 +564,9 @@
         <form class="no-js">
           <div class="facet-filters sorting caption">
             <div class="facet-filters__field">
-              <h2 class="facet-filters__label caption-large text-body">
+              <p class="facet-filters__label caption-large text-body">
                 <label for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
-              </h2>
+              </p>
               <div class="select">
                 {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
                 <select
@@ -640,7 +640,7 @@
           <div class="mobile-facets__inner gradient">
             <div class="mobile-facets__header">
               <div class="mobile-facets__header-inner">
-                <h2 class="mobile-facets__heading medium-hide large-up-hide">
+                <div class="mobile-facets__heading medium-hide large-up-hide">
                   {%- if enable_filtering and enable_sorting -%}
                     {{ 'products.facets.filter_and_sort' | t }}
                   {%- elsif enable_filtering -%}
@@ -648,12 +648,12 @@
                   {%- elsif enable_sorting -%}
                     {{ 'products.facets.sort_button' | t }}
                   {%- endif -%}
-                </h2>
-                <h2 class="mobile-facets__heading small-hide">
+                </div>
+                <div class="mobile-facets__heading small-hide">
                   {%- if enable_filtering -%}
                     {{ 'products.facets.filter_button' | t }}
                   {%- endif -%}
-                </h2>
+                </div>
                 <p class="mobile-facets__count">
                   {%- if results.results_count -%}
                     {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
@@ -679,11 +679,11 @@
                         data-index="mobile-{{ forloop.index }}"
                       >
                         <summary class="mobile-facets__summary focus-inset">
-                          <div>
+                          <span>
                             <span>{{ filter.label | escape }}</span>
                             <span class="mobile-facets__arrow no-js-hidden">{% render 'icon-arrow' %}</span>
                             <noscript>{% render 'icon-caret' %}</noscript>
-                          </div>
+                          </span>
                         </summary>
                         <div
                           id="FacetMobile-{{ forloop.index }}-{{ section.id }}"
@@ -722,9 +722,9 @@
                                             {% endif %}
                                     >
 
-                                    <div class="filter-swatch {% if value_down == 'white' %}filter-swatch--transparent{% endif %}"  style="background: url('{{ valuet  | file_img_url }}')">
+                                    <span class="filter-swatch {% if value_down == 'white' %}filter-swatch--transparent{% endif %}"  style="background: url('{{ valuet  | file_img_url }}')">
 
-                                    </div>
+                                    </span>
 
                                     <span aria-hidden="true">{{ value.label | escape }}</span>
                                   </label>
@@ -815,11 +815,11 @@
                         data-index="mobile-{{ forloop.index }}"
                       >
                         <summary class="mobile-facets__summary focus-inset">
-                          <div>
+                          <span>
                             <span>{{ filter.label | escape }}</span>
                             <span class="mobile-facets__arrow no-js-hidden">{% render 'icon-arrow' %}</span>
                             <noscript>{% render 'icon-caret' %}</noscript>
-                          </div>
+                          </span>
                         </summary>
                         <div
                           id="FacetMobile-{{ forloop.index }}-{{ section.id }}"
@@ -1038,9 +1038,9 @@
       <form id="FacetSortDrawerForm" class="facets__form">
         <div class="facet-filters sorting caption small-hide">
           <div class="facet-filters__field">
-            <h2 class="facet-filters__label caption-large text-body">
+            <p class="facet-filters__label caption-large text-body">
               <label for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
-            </h2>
+            </p>
             <div class="select">
               {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
               <select
@@ -1086,7 +1086,7 @@
     class="product-count light{% if filter_type == 'vertical' or filter_type == 'horizontal' %} medium-hide large-up-hide{% endif %}"
     role="status"
   >
-    <h2 class="product-count__text text-body">
+    <div class="product-count__text text-body">
       <span id="ProductCount">
         {%- if results.results_count -%}
           {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
@@ -1099,7 +1099,7 @@
           }}
         {%- endif -%}
       </span>
-    </h2>
+    </div>
     <div class="loading-overlay__spinner">
       <svg
         aria-hidden="true"

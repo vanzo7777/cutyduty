@@ -53,10 +53,10 @@
         hidden
       {% endunless %}
     >
-      <h2 class="form__message" tabindex="-1" autofocus>
+      <div class="form__message" tabindex="-1" autofocus>
         {% render 'icon-error' %}
         <span class="error-message">{{ 'templates.contact.form.error_heading' | t }}</span>
-      </h2>
+      </div>
 
       <ul>
         {%- if form.errors -%}

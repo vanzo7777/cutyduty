@@ -1,0 +1,95 @@
+{% unless template == 'index' or template == 'cart' or template == 'list-collections' or template == '404' %}
+
+{% assign t = template | split: '.' | first %}
+
+<div class="page-width">
+<nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
+  <ol>
+    <li>
+      <a href="/" title="Home">Home</a>
+    </li>
+
+  {% case t %}
+  {% when 'page' %}
+
+    <li>
+      <span aria-current="page">{{ page.title }}</span>
+    </li>
+
+  {% when 'product' %}
+
+    {% if collection.url %}
+      <li>
+        {{ collection.title | link_to: collection.url }}
+      </li>
+    {% endif %}
+
+    <li>
+      <span aria-current="page">{{ product.title }}</span>
+    </li>
+
+  {% when 'collection' and collection.handle %}
+
+    {% if current_tags %}
+      <li>{{ collection.title | link_to: collection.url }}</li>
+      <li>
+        {% capture tag_url %}{{ collection.url }}/{{ current_tags | join: "+"}}{% endcapture %}
+        <span  aria-current="page">{{ current_tags | join: " + "}}</span>
+      </li>
+    {% else %}
+      <li>
+        <span aria-current="page">{{ collection.title }}</span>
+      </li>
+    {% endif %}
+
+  {% when 'blog' %}
+
+    {% if current_tags %}
+      <li>{{ blog.title | link_to: blog.url }}</li>
+      <li>
+        {% capture tag_url %}{{blog.url}}/tagged/{{ current_tags | join: "+" }}{% endcapture %}
+        <span  aria-current="page">{{ current_tags | join: " + " }}</span>
+      </li>
+    {% else %}
+      <li>
+        <span aria-current="page">{{ blog.title }}</span>
+      </li>
+    {% endif %}
+
+  {% when 'article' %}
+
+    <li>{{ blog.title | link_to: blog.url }}</li>
+    <li>
+      <span aria-current="page">{{ article.title }}</span>
+    </li>
+
+  {% else %}
+
+    <li aria-current="page">
+      <span aria-current="page">{{ page_title }}</span>
+    </li>
+
+  {% endcase %}
+
+  </ol>
+</nav>
+{% endunless %}
+</div>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "{{ shop.name }}",
+        "item": "{{ shop.url }}"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ collection.title }}",
+        "item": "{{ canonical_url }}"
+      }]
+    }
+    </script>

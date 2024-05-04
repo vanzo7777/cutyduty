@@ -2487,6 +2487,51 @@ product-info .loading-overlay:not(.hidden) ~ *,
   transition: width 0.3s cubic-bezier(0.52, 0, 0.61, 0.99);
 }
 
+/* Breadcrumbs' styles */
+.breadcrumbs {
+  font-size: .85em;
+  margin: 2em 0;
+}
+
+.breadcrumbs ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+}
+
+.breadcrumbs a {
+  /* text-decoration: underline; */
+  color: rgba(18, 18, 18, 0.75);
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs li:not(:last-child):after {  
+  content: "›\00a0";
+  display: inline-block;
+  padding-left: .75ch;
+  speak: none;
+  vertical-align: middle;
+}
+
+.breadcrumbs [aria-current="page"] {
+  color: inherit;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 989px) {
   .header__heading,
   .header__heading-link {
