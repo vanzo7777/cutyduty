@@ -60,6 +60,7 @@
       onload="this.media='all'"
     >
   {%- endif -%}
+  
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
@@ -74,6 +75,7 @@
         data-url="{{ product.url }}"
         class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}"
       >
+
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
         {%- for block in section.blocks -%}

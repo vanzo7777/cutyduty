@@ -55,7 +55,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {%- unless page_title contains shop.name %} | {{ shop.name }}{% endunless -%}
         </title>
         {% if page_description %}
-          <meta name="description" content="{{ page_description | escape }} {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%} {%- unless page_title contains shop.name %} | {{ shop.name }}{% endunless -%}
+          <meta name="description" content="{{ page_description | escape }} {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
           ">
         {% endif %}
     {% else %}

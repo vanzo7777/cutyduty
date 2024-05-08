@@ -42,9 +42,9 @@
                 {% endif %}
 
                 <div class="popup__col popup__col--content" data-first-step>
-                    <h2 class="popup__heading">
+                    <div class="popup__heading">
                         {{ heading }}
-                    </h2>
+                    </div>
 
                     {% if subheading != blank %}
                         <div class="popup__subheading">
@@ -94,9 +94,9 @@
                 </div>
 
                 <div class="popup__col popup__col--content hidden" data-second-step>
-                    <h2 class="popup__heading">
+                    <div class="popup__heading">
                         {{ success_heading }}
-                    </h2>
+                    </div>
 
                     {% if success_subheading != blank %}
                         <div class="popup__subheading">
