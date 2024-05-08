@@ -375,12 +375,15 @@
         "template--20651489788186__2ea54725-3baa-4483-9663-fc2d247945d4-text-1": {
           "type": "text",
           "settings": {
-            "text": "<h3><a href=\"https:\/\/www.instagram.com\/cuty_duty_official\/\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/cuty_duty_official\/\"><strong>FOLLOW US @cuty_duty_official<\/strong><\/a><\/h3>"
+            "text": "<p><a href=\"https:\/\/www.instagram.com\/cuty_duty_official\/\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/cuty_duty_official\/\"><strong>FOLLOW US @cuty_duty_official<\/strong><\/a><\/p>"
           }
         }
       },
       "block_order": [
         "template--20651489788186__2ea54725-3baa-4483-9663-fc2d247945d4-text-1"
+      ],
+      "custom_css": [
+        "p {font-size: calc(var(--font-heading-scale) * 1.8rem);}"
       ],
       "settings": {
         "desktop_content_position": "center",
