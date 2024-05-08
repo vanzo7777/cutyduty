@@ -1,13 +1,5 @@
 {
   "sections": {
-    "banner": {
-      "type": "main-collection-banner",
-      "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "background-1"
-      }
-    },
     "3fd3c37e-c277-4c63-bdb4-cd4b00084b88": {
       "type": "custom-liquid",
       "disabled": true,
@@ -333,10 +325,68 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "collapsible_content_kcWcHH": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_XwCkcf": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are cotton undergarments suitable for sensitive skin?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, cotton underwears is ideal for sensitive skin because of its breathable and hypoallergenic properties.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_a8pdrX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I ensure the longevity of my cotton underwear?",
+            "icon": "check_mark",
+            "row_content": "<p>To ensure your 100 percent cotton bras and panties last longer, wash them in cold water, avoid bleaching, and air dry them instead of using a dryer.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_RCxYmy": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are there eco-friendly options for cotton underwear?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, there are eco-friendly options for cotton negligee sets. Available options include those made from organic cotton or sustainably sourced cotton materials.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_XwCkcf",
+        "collapsible_row_a8pdrX",
+        "collapsible_row_RCxYmy"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "banner",
     "3fd3c37e-c277-4c63-bdb4-cd4b00084b88",
     "product-grid",
     "d4c7f273-86d0-4eff-b767-7e19fce07c6d",
@@ -347,6 +397,8 @@
     "c7ba7615-5f04-41a9-9a9a-96591faf0fe9",
     "16947145913c6478cf",
     "16947214732bd30908",
-    "35d4edcb-4ee5-4063-8a70-df63d2507c03"
+    "35d4edcb-4ee5-4063-8a70-df63d2507c03",
+    "banner",
+    "collapsible_content_kcWcHH"
   ]
 }

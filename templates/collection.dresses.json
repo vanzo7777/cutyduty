@@ -1,13 +1,5 @@
 {
   "sections": {
-    "banner": {
-      "type": "main-collection-banner",
-      "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "background-1"
-      }
-    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -322,10 +314,68 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "collapsible_content_VPMQtB": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_h9kTjt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I know what size lingerie to buy?",
+            "icon": "check_mark",
+            "row_content": "<p>To determine your lingerie size, take accurate measurements of your bust, waist, and hips, then refer to the sizing chart under the description of the lingerie for ladies you're buying.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_9Ud8H6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is lingerie only meant for special occasions?",
+            "icon": "check_mark",
+            "row_content": "<p>No. Lingerie is not just for special occasions. You can wear lingerie tops for women with cute bottoms to boost your confidence every day or as luxury underwear to play up your bedroom game.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LQQCYk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can lingerie be worn under different types of clothing?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, you can wear female lingeries under various types of clothes, such as dresses, skirts, blouses, and even casual outfits, depending on the style and fabric type.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_h9kTjt",
+        "collapsible_row_9Ud8H6",
+        "collapsible_row_LQQCYk"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "banner",
     "product-grid",
     "d4c7f273-86d0-4eff-b767-7e19fce07c6d",
     "a1432bc3-183e-4e35-8e7c-097da44fa16e",
@@ -335,6 +385,8 @@
     "c7ba7615-5f04-41a9-9a9a-96591faf0fe9",
     "16947145913c6478cf",
     "16947214732bd30908",
-    "35d4edcb-4ee5-4063-8a70-df63d2507c03"
+    "35d4edcb-4ee5-4063-8a70-df63d2507c03",
+    "banner",
+    "collapsible_content_VPMQtB"
   ]
 }

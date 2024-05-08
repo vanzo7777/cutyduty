@@ -19,6 +19,11 @@
             "picker_type": "button"
           }
         },
+        "linked_products_LeTayD": {
+          "type": "linked_products",
+          "settings": {
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {

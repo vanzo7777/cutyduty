@@ -60,6 +60,7 @@
       onload="this.media='all'"
     >
   {%- endif -%}
+  
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
@@ -74,6 +75,7 @@
         data-url="{{ product.url }}"
         class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}"
       >
+
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
         {%- for block in section.blocks -%}
@@ -421,6 +423,8 @@
               %}
             {%- when 'variant_picker' -%}
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+            {%- when 'linked_products' -%}
+              {% render 'product-linked-products', product: product%}
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
             {%- when 'rating' -%}
@@ -832,6 +836,13 @@
           "default": "button",
           "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.label"
         }
+      ]
+    },
+    {
+      "type": "linked_products",
+      "name": "Linked products",
+      "limit": 1,
+      "settings": [
       ]
     },
     {

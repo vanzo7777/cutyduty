@@ -1,13 +1,5 @@
 {
   "sections": {
-    "banner": {
-      "type": "main-collection-banner",
-      "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "background-1"
-      }
-    },
     "3fd3c37e-c277-4c63-bdb4-cd4b00084b88": {
       "type": "custom-liquid",
       "disabled": true,
@@ -332,10 +324,68 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "collapsible_content_K8Qqj8": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_VKxiTq": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I choose the right roleplay outfit for me?",
+            "icon": "check_mark",
+            "row_content": "<p>When choosing the right roleplay costume for you, consider your interests like favourite characters, fantasies, or scenarios. Prioritise comfort in your selection. The fit and theme compatibility with the roleplay scenes you have in mind also matter. <\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_HHXwBV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are some popular roleplay themes for couples?",
+            "icon": "check_mark",
+            "row_content": "<p>Some of the most popular roleplay themes for couples are the doctor\/patient; teacher\/student; police officer\/suspect; fantasy characters such as pirates, vampires, or fairytale characters; and workplace scenes like boss and secretary or employee and customer.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_ULW8NW": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can roleplay be beneficial for relationships outside of the bedroom?",
+            "icon": "check_mark",
+            "row_content": "<p>Sexy outfits for roleplay also have lots of benefits beyond the bedroom walls including improving communication, strengthening bonds, developing empathy, relieving stress, and enhancing creativity for a dynamic and vibrant relationship.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_VKxiTq",
+        "collapsible_row_HHXwBV",
+        "collapsible_row_ULW8NW"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "banner",
     "3fd3c37e-c277-4c63-bdb4-cd4b00084b88",
     "product-grid",
     "d4c7f273-86d0-4eff-b767-7e19fce07c6d",
@@ -346,6 +396,8 @@
     "c7ba7615-5f04-41a9-9a9a-96591faf0fe9",
     "16947145913c6478cf",
     "16947214732bd30908",
-    "35d4edcb-4ee5-4063-8a70-df63d2507c03"
+    "35d4edcb-4ee5-4063-8a70-df63d2507c03",
+    "banner",
+    "collapsible_content_K8Qqj8"
   ]
 }

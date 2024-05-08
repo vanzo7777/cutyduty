@@ -2487,6 +2487,11 @@ product-info .loading-overlay:not(.hidden) ~ *,
   transition: width 0.3s cubic-bezier(0.52, 0, 0.61, 0.99);
 }
 
+/* .rich-text__wrapper .rich-text__title {
+  font-size: calc(var(--font-heading-scale) * 1.8rem);
+} */
+
+
 /* Breadcrumbs' styles */
 .breadcrumbs {
   font-size: .85em;

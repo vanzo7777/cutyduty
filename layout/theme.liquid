@@ -55,7 +55,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {%- unless page_title contains shop.name %} | {{ shop.name }}{% endunless -%}
         </title>
         {% if page_description %}
-          <meta name="description" content="{{ page_description | escape }} {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%} {%- unless page_title contains shop.name %} | {{ shop.name }}{% endunless -%}
+          <meta name="description" content="{{ page_description | escape }} {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
           ">
         {% endif %}
     {% else %}
@@ -100,6 +100,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'cookie-lib.js' | asset_url }}" defer="defer"></script>
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
@@ -357,6 +358,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {%- endif -%}
 
     {% sections 'header-group' %}
+    {% sections 'popup-group' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {% include 'breadcrumbs' %}

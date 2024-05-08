@@ -1,13 +1,5 @@
 {
   "sections": {
-    "banner": {
-      "type": "main-collection-banner",
-      "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "background-1"
-      }
-    },
     "3fd3c37e-c277-4c63-bdb4-cd4b00084b88": {
       "type": "custom-liquid",
       "disabled": true,
@@ -332,10 +324,68 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "collapsible_content_AKaAd8": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_8TFM9D": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is sexy lingerie only for special occasions?",
+            "icon": "check_mark",
+            "row_content": "<p>No, it isn't, you can wear your sexy lingerie anytime you want and not just for special occasions.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_YXRGXN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are there affordable options for sexy lingerie?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, there are lots of affordable sexy female lingerie options available online in our store.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_wagCgF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can I feel more confident in lingerie?",
+            "icon": "check_mark",
+            "row_content": "<p>To feel more confident in lingerie, focus on choosing styles that make you feel comfortable and accentuate your best features. Also, practice self-love so you can feel more pumped wearing womens hot lingerie.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_8TFM9D",
+        "collapsible_row_YXRGXN",
+        "collapsible_row_wagCgF"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "banner",
     "3fd3c37e-c277-4c63-bdb4-cd4b00084b88",
     "product-grid",
     "d4c7f273-86d0-4eff-b767-7e19fce07c6d",
@@ -346,6 +396,8 @@
     "c7ba7615-5f04-41a9-9a9a-96591faf0fe9",
     "16947145913c6478cf",
     "16947214732bd30908",
-    "35d4edcb-4ee5-4063-8a70-df63d2507c03"
+    "35d4edcb-4ee5-4063-8a70-df63d2507c03",
+    "banner",
+    "collapsible_content_AKaAd8"
   ]
 }
