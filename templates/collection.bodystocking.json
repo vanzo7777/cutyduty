@@ -333,42 +333,8 @@
         "color_scheme": "background-1"
       }
     },
-    "collapsible_content_TUJxwh": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_xGGaUG": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can bodystockings be worn under clothing?",
-            "icon": "check_mark",
-            "row_content": "<p>Yes, you can wear bodystockings under your clothes. Intact, they make for a sleek and seamless look especially when you want an extra layer of coverage without scruffy lines or bumps.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_EpTB7M": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Are bodystockings suitable for all body types?",
-            "icon": "check_mark",
-            "row_content": "<p>Yes, bodystockings can be worn by women of all body types. Our body stockings come in various styles and sizes, from petite frames to plus sizes, so you have nothing to worry about when shopping with us.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_ftKyjN": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How do I choose the right size bodystocking?",
-            "icon": "check_mark",
-            "row_content": "<p>To choose the right size of bodystocking for you, refer to the sizing chart on the cloth description and make your pick using the sizes that align with yours. To find the best fit, measuring your bust, waist, hips, and height is most important.<\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_xGGaUG",
-        "collapsible_row_EpTB7M",
-        "collapsible_row_ftKyjN"
-      ],
+    "collection_metafields_collapsible_content_kkgeDp": {
+      "type": "collection-metafields-collapsible-content",
       "settings": {
         "caption": "",
         "heading": "FAQ",
@@ -398,6 +364,6 @@
     "16947214732bd30908",
     "35d4edcb-4ee5-4063-8a70-df63d2507c03",
     "banner",
-    "collapsible_content_TUJxwh"
+    "collection_metafields_collapsible_content_kkgeDp"
   ]
 }

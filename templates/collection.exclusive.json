@@ -333,42 +333,8 @@
         "color_scheme": "background-1"
       }
     },
-    "collapsible_content_AKaAd8": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_8TFM9D": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Is sexy lingerie only for special occasions?",
-            "icon": "check_mark",
-            "row_content": "<p>No, it isn't, you can wear your sexy lingerie anytime you want and not just for special occasions.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_YXRGXN": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Are there affordable options for sexy lingerie?",
-            "icon": "check_mark",
-            "row_content": "<p>Yes, there are lots of affordable sexy female lingerie options available online in our store.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_wagCgF": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How can I feel more confident in lingerie?",
-            "icon": "check_mark",
-            "row_content": "<p>To feel more confident in lingerie, focus on choosing styles that make you feel comfortable and accentuate your best features. Also, practice self-love so you can feel more pumped wearing womens hot lingerie.<\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_8TFM9D",
-        "collapsible_row_YXRGXN",
-        "collapsible_row_wagCgF"
-      ],
+    "collection_metafields_collapsible_content_8LN8ae": {
+      "type": "collection-metafields-collapsible-content",
       "settings": {
         "caption": "",
         "heading": "FAQ",
@@ -398,6 +364,6 @@
     "16947214732bd30908",
     "35d4edcb-4ee5-4063-8a70-df63d2507c03",
     "banner",
-    "collapsible_content_AKaAd8"
+    "collection_metafields_collapsible_content_8LN8ae"
   ]
 }

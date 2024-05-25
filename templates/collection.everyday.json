@@ -333,42 +333,8 @@
         "color_scheme": "background-1"
       }
     },
-    "collapsible_content_kt4EhX": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_BB3jN4": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can I wear everyday lingerie during workouts?",
-            "icon": "check_mark",
-            "row_content": "<p>Yes, you can. Wearing underwear helps catch some moisture and keeps you comfortable while exercising. If you haven't had any issues with wearing lingerie during your workouts, then you can stick with it. But if you notice you're constantly uncomfortable with your lingerie on during your sessions, then feel free to go pantie-free. <\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_Tgz9JG": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How often should I replace my everyday underwear?",
-            "icon": "check_mark",
-            "row_content": "<p>According to experts, it is advised you change your everyday underwear every 6 months. And if it's not up to 6 months but it's worn out, has bad elastic and holes, or looks saggy, then it's due for a change. <\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_ekz47A": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How should I store my lingerie when traveling?",
-            "icon": "check_mark",
-            "row_content": "<p>When traveling, you can put your lingerie and best everyday womens underwear in a small travel bag before putting it in your suitcase. That way, it's easy to locate, doesn't fall out during routine checks, or catch your zippers. <\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_BB3jN4",
-        "collapsible_row_Tgz9JG",
-        "collapsible_row_ekz47A"
-      ],
+    "collection_metafields_collapsible_content_xeJBP7": {
+      "type": "collection-metafields-collapsible-content",
       "settings": {
         "caption": "",
         "heading": "FAQ",
@@ -398,6 +364,6 @@
     "16947214732bd30908",
     "35d4edcb-4ee5-4063-8a70-df63d2507c03",
     "banner",
-    "collapsible_content_kt4EhX"
+    "collection_metafields_collapsible_content_xeJBP7"
   ]
 }

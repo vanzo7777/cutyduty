@@ -20,6 +20,11 @@
           "settings": {
           }
         },
+        "linked_products_DcQLUg": {
+          "type": "linked_products",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -55,6 +60,7 @@
         "vendor",
         "title",
         "price",
+        "linked_products_DcQLUg",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",

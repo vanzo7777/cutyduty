@@ -333,42 +333,8 @@
         "color_scheme": "background-1"
       }
     },
-    "collapsible_content_pw6yx8": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_jp9YBt": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Are thigh high stockings comfortable to wear?",
-            "icon": "check_mark",
-            "row_content": "<p>Sure, long stockings for women can be comfortable to wear, especially when made from high-quality materials and designed with features that make them stay up like silicone bands or elastic tops.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_eekYyz": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can I wear thigh high stockings with skirts and dresses?",
-            "icon": "check_mark",
-            "row_content": "<p>Yes, you can wear thigh high stockings sexy with skirts and dresses. The pair even makes for a stylish combo that you can wear every day or on special occasions.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_nEnkdF": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How do I prevent thigh high stockings from slipping down?",
-            "icon": "check_mark",
-            "row_content": "<p>To prevent your thigh high stockings for ladies from slipping down, choose styles with waistbands or elastic tops so they can fit securely on stay that way throughout the day. They also provide a comfortable fit that you don't need to constantly adjust.<\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_jp9YBt",
-        "collapsible_row_eekYyz",
-        "collapsible_row_nEnkdF"
-      ],
+    "collection_metafields_collapsible_content_mX9Uc6": {
+      "type": "collection-metafields-collapsible-content",
       "settings": {
         "caption": "",
         "heading": "FAQ",
@@ -398,6 +364,6 @@
     "16947214732bd30908",
     "35d4edcb-4ee5-4063-8a70-df63d2507c03",
     "banner",
-    "collapsible_content_pw6yx8"
+    "collection_metafields_collapsible_content_mX9Uc6"
   ]
 }

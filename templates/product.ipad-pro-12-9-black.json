@@ -13,15 +13,15 @@
           "settings": {
           }
         },
+        "linked_products_KzwWHD": {
+          "type": "linked_products",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button"
-          }
-        },
-        "linked_products_LeTayD": {
-          "type": "linked_products",
-          "settings": {
           }
         },
         "quantity_selector": {
@@ -51,6 +51,7 @@
       "block_order": [
         "title",
         "price",
+        "linked_products_KzwWHD",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",

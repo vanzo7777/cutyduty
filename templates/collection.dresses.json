@@ -323,42 +323,8 @@
         "color_scheme": "background-1"
       }
     },
-    "collapsible_content_VPMQtB": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_h9kTjt": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How do I know what size lingerie to buy?",
-            "icon": "check_mark",
-            "row_content": "<p>To determine your lingerie size, take accurate measurements of your bust, waist, and hips, then refer to the sizing chart under the description of the lingerie for ladies you're buying.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_9Ud8H6": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Is lingerie only meant for special occasions?",
-            "icon": "check_mark",
-            "row_content": "<p>No. Lingerie is not just for special occasions. You can wear lingerie tops for women with cute bottoms to boost your confidence every day or as luxury underwear to play up your bedroom game.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_LQQCYk": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can lingerie be worn under different types of clothing?",
-            "icon": "check_mark",
-            "row_content": "<p>Yes, you can wear female lingeries under various types of clothes, such as dresses, skirts, blouses, and even casual outfits, depending on the style and fabric type.<\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_h9kTjt",
-        "collapsible_row_9Ud8H6",
-        "collapsible_row_LQQCYk"
-      ],
+    "collection_metafields_collapsible_content_ajtrwi": {
+      "type": "collection-metafields-collapsible-content",
       "settings": {
         "caption": "",
         "heading": "FAQ",
@@ -387,6 +353,6 @@
     "16947214732bd30908",
     "35d4edcb-4ee5-4063-8a70-df63d2507c03",
     "banner",
-    "collapsible_content_VPMQtB"
+    "collection_metafields_collapsible_content_ajtrwi"
   ]
 }

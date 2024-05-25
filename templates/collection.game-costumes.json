@@ -333,42 +333,8 @@
         "color_scheme": "background-1"
       }
     },
-    "collapsible_content_K8Qqj8": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_VKxiTq": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How do I choose the right roleplay outfit for me?",
-            "icon": "check_mark",
-            "row_content": "<p>When choosing the right roleplay costume for you, consider your interests like favourite characters, fantasies, or scenarios. Prioritise comfort in your selection. The fit and theme compatibility with the roleplay scenes you have in mind also matter. <\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_HHXwBV": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What are some popular roleplay themes for couples?",
-            "icon": "check_mark",
-            "row_content": "<p>Some of the most popular roleplay themes for couples are the doctor\/patient; teacher\/student; police officer\/suspect; fantasy characters such as pirates, vampires, or fairytale characters; and workplace scenes like boss and secretary or employee and customer.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_ULW8NW": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can roleplay be beneficial for relationships outside of the bedroom?",
-            "icon": "check_mark",
-            "row_content": "<p>Sexy outfits for roleplay also have lots of benefits beyond the bedroom walls including improving communication, strengthening bonds, developing empathy, relieving stress, and enhancing creativity for a dynamic and vibrant relationship.<\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_VKxiTq",
-        "collapsible_row_HHXwBV",
-        "collapsible_row_ULW8NW"
-      ],
+    "collection_metafields_collapsible_content_rBrDRf": {
+      "type": "collection-metafields-collapsible-content",
       "settings": {
         "caption": "",
         "heading": "FAQ",
@@ -398,6 +364,6 @@
     "16947214732bd30908",
     "35d4edcb-4ee5-4063-8a70-df63d2507c03",
     "banner",
-    "collapsible_content_K8Qqj8"
+    "collection_metafields_collapsible_content_rBrDRf"
   ]
 }

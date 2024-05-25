@@ -13,6 +13,11 @@
           "settings": {
           }
         },
+        "linked_products_ftU8eT": {
+          "type": "linked_products",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -46,7 +51,7 @@
       "block_order": [
         "title",
         "price",
-        "linked_products_RiMtrT",
+        "linked_products_ftU8eT",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",

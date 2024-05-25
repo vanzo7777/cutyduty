@@ -250,6 +250,9 @@
         "c9b82473-e2ee-49fd-ac1d-67f632cb7380": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
             "html_area": "<a href=\"https:\/\/www.instagram.com\/cuty_duty_official\/\" target=\"_blank\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0736\/0243\/3306\/files\/Untitled_design_30507670-6044-4194-9311-8570db06deac.png?v=1695223739\" alt=\"Follow us on Instagram!\" style=\"width: 100%; max-width: 4194px; height: auto;\">\n<\/a>"
           }
         }
@@ -327,6 +330,23 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collection_metafields_collapsible_content_FfA3VX": {
+      "type": "collection-metafields-collapsible-content",
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -341,6 +361,7 @@
     "c7ba7615-5f04-41a9-9a9a-96591faf0fe9",
     "16947145913c6478cf",
     "16947214732bd30908",
-    "35d4edcb-4ee5-4063-8a70-df63d2507c03"
+    "35d4edcb-4ee5-4063-8a70-df63d2507c03",
+    "collection_metafields_collapsible_content_FfA3VX"
   ]
 }

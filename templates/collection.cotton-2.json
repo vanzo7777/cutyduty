@@ -334,42 +334,8 @@
         "color_scheme": "background-1"
       }
     },
-    "collapsible_content_kcWcHH": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_XwCkcf": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Are cotton undergarments suitable for sensitive skin?",
-            "icon": "check_mark",
-            "row_content": "<p>Yes, cotton underwears is ideal for sensitive skin because of its breathable and hypoallergenic properties.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_a8pdrX": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How do I ensure the longevity of my cotton underwear?",
-            "icon": "check_mark",
-            "row_content": "<p>To ensure your 100 percent cotton bras and panties last longer, wash them in cold water, avoid bleaching, and air dry them instead of using a dryer.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_RCxYmy": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Are there eco-friendly options for cotton underwear?",
-            "icon": "check_mark",
-            "row_content": "<p>Yes, there are eco-friendly options for cotton negligee sets. Available options include those made from organic cotton or sustainably sourced cotton materials.<\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_XwCkcf",
-        "collapsible_row_a8pdrX",
-        "collapsible_row_RCxYmy"
-      ],
+    "collection_metafields_collapsible_content_HG9Mg3": {
+      "type": "collection-metafields-collapsible-content",
       "settings": {
         "caption": "",
         "heading": "FAQ",
@@ -399,6 +365,6 @@
     "16947214732bd30908",
     "35d4edcb-4ee5-4063-8a70-df63d2507c03",
     "banner",
-    "collapsible_content_kcWcHH"
+    "collection_metafields_collapsible_content_HG9Mg3"
   ]
 }

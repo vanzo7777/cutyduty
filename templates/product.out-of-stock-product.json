@@ -13,6 +13,11 @@
           "settings": {
           }
         },
+        "linked_products_T3XDhQ": {
+          "type": "linked_products",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -60,6 +65,7 @@
       "block_order": [
         "title",
         "price",
+        "linked_products_T3XDhQ",
         "variant_picker",
         "quantity_selector",
         "22303371-d1e0-44fa-b0c3-6c206d0777de",

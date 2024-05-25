@@ -6,7 +6,7 @@
       "type": "timeout-popup",
       "settings": {
         "show_popup": true,
-        "image": "shopify:\/\/shop_images\/photo1694514830_1.jpg",
+        "image": "shopify:\/\/shop_images\/photo_2023-11-1115.07.41_481e130f-5c0a-47bd-a0c7-aa728989f697.jpg",
         "heading": "Claim your exclusive discount",
         "subheading": "<p>Sign up for the newsletter and get 10% off with this exclusive offer. Enter your e-mail to receive the code.<\/p>",
         "placeholder": "Enter your Email",
@@ -24,8 +24,8 @@
         "product_link_UmfRg6": {
           "type": "product_link",
           "settings": {
-            "text": "Button text",
-            "reference": "black-lace-delight-sensual-lingerie-set-bralette-and-panties"
+            "text": "Add to Bag",
+            "reference": "5x-high-waisted-thongs-white"
           }
         }
       },
@@ -34,9 +34,9 @@
       ],
       "settings": {
         "show_popup": true,
-        "image": "shopify:\/\/shop_images\/photo1698324980_2_904ae636-afac-4686-a38e-71f17a31e81f.jpg",
+        "image": "shopify:\/\/shop_images\/Screenshot2024-03-28at11.21.11.webp",
         "heading": "We have a unique offer for you!",
-        "subheading": "<p>Follow the link and get the product at a unique discount!<\/p>",
+        "subheading": "<h4>5X High-Waisted Thongs White 29,99 $ instead 74,95$<\/h4>",
         "close_popup_text": "No thanks, I just want to make a purchase."
       }
     }

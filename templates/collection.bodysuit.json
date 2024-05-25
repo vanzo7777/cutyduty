@@ -333,42 +333,8 @@
         "color_scheme": "background-1"
       }
     },
-    "collapsible_content_mk3w4f": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_FqFxw3": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Are bodysuits comfortable to wear all day?",
-            "icon": "check_mark",
-            "row_content": "<p>Yes, bodysuits are comfortable to wear all day, depending on the fabric and fit. Cotton and mesh fabrics are ideal for an everyday bodysuit.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_rNrTgC": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can I wear a bodysuit as lingerie?",
-            "icon": "check_mark",
-            "row_content": "<p>Yes, you can wear a bodysuit as lingerie.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_9t9tUX": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How do I care for my bodysuits to make them last longer?",
-            "icon": "check_mark",
-            "row_content": "<p>To make your bodysuits last longer, follow the care instructions on the label and avoid harsh washing methods. Fabrics that are machine washable and low-maintenance are more convenient.<\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_FqFxw3",
-        "collapsible_row_rNrTgC",
-        "collapsible_row_9t9tUX"
-      ],
+    "collection_metafields_collapsible_content_pRgRQN": {
+      "type": "collection-metafields-collapsible-content",
       "settings": {
         "caption": "",
         "heading": "FAQ",
@@ -398,6 +364,6 @@
     "16947214732bd30908",
     "35d4edcb-4ee5-4063-8a70-df63d2507c03",
     "banner",
-    "collapsible_content_mk3w4f"
+    "collection_metafields_collapsible_content_pRgRQN"
   ]
 }

@@ -331,6 +331,23 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collection_metafields_collapsible_content_6HYqeA": {
+      "type": "collection-metafields-collapsible-content",
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -345,6 +362,7 @@
     "c7ba7615-5f04-41a9-9a9a-96591faf0fe9",
     "16947145913c6478cf",
     "16947214732bd30908",
-    "35d4edcb-4ee5-4063-8a70-df63d2507c03"
+    "35d4edcb-4ee5-4063-8a70-df63d2507c03",
+    "collection_metafields_collapsible_content_6HYqeA"
   ]
 }

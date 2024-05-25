@@ -333,42 +333,8 @@
         "color_scheme": "background-1"
       }
     },
-    "collapsible_content_HCNmWG": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_zJ9ikQ": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How do I know if my sportswear bra fits properly?",
-            "icon": "check_mark",
-            "row_content": "<p>Your sportswear bra fits properly if it feels adequately supportive, stays in place during movement, and feels comfortable without digging into your skin.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_bwT9Qj": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can I wear a regular bra for sports and workouts?",
-            "icon": "check_mark",
-            "row_content": "<p>Yes, you can wear a regular bra for light activities. However, it's generally not recommended for sports and workouts due to their insufficient support and comfort, as they may cause discomfort, chafing, and potential injury.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_zUD7Cj": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can I wear a sports bra as a regular bra?",
-            "icon": "check_mark",
-            "row_content": "<p>Yes, you can wear a sports bra as a regular bra, especially if you find it comfortable and supportive for everyday activities. But, keep in mind that sports or exercise fitness bras are designed for higher impact activities, so they may be discomforting under certain outfits or occasions.<\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_zJ9ikQ",
-        "collapsible_row_bwT9Qj",
-        "collapsible_row_zUD7Cj"
-      ],
+    "collection_metafields_collapsible_content_GCxhXR": {
+      "type": "collection-metafields-collapsible-content",
       "settings": {
         "caption": "",
         "heading": "FAQ",
@@ -398,6 +364,6 @@
     "16947214732bd30908",
     "35d4edcb-4ee5-4063-8a70-df63d2507c03",
     "banner",
-    "collapsible_content_HCNmWG"
+    "collection_metafields_collapsible_content_GCxhXR"
   ]
 }

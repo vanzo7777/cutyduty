@@ -99,5 +99,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         showPopup(selectors.timeoutPopup);
-    }, 15000);
+    }, 30000);
 });

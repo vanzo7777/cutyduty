@@ -13,6 +13,11 @@
           "settings": {
           }
         },
+        "linked_products_QiMCP6": {
+          "type": "linked_products",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -46,6 +51,7 @@
       "block_order": [
         "title",
         "price",
+        "linked_products_QiMCP6",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",

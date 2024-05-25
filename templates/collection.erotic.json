@@ -333,42 +333,8 @@
         "color_scheme": "background-1"
       }
     },
-    "collapsible_content_PRdk9w": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_Pae4px": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What if I'm not sure what style of lingerie suits me?",
-            "icon": "check_mark",
-            "row_content": "<p>If you're not sure what style of lingerie suits you, try out different styles and designs to find one that makes you feel most confident, comfortable, and like your best self<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_8w6jnN": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How do I care for my lingerie to ensure it lasts?",
-            "icon": "check_mark",
-            "row_content": "<p>To ensure your lingerie lasts, follow the care instructions on the outfit description, hand wash delicate pieces, and store them properly so they retain their shape and quality.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_WjAQMA": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can lingerie really enhance intimacy in a relationship?",
-            "icon": "check_mark",
-            "row_content": "<p>Yes, lingerie can enhance intimacy in a relationship by creating fun sensual moments and leaving room for exciting adventures.<\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_Pae4px",
-        "collapsible_row_8w6jnN",
-        "collapsible_row_WjAQMA"
-      ],
+    "collection_metafields_collapsible_content_6rfBhb": {
+      "type": "collection-metafields-collapsible-content",
       "settings": {
         "caption": "",
         "heading": "FAQ",
@@ -398,6 +364,6 @@
     "16947214732bd30908",
     "35d4edcb-4ee5-4063-8a70-df63d2507c03",
     "banner",
-    "collapsible_content_PRdk9w"
+    "collection_metafields_collapsible_content_6rfBhb"
   ]
 }
