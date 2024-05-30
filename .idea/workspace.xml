@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48d9b9b4-21c7-41b7-979f-1c78d4d78ada" name="Changes" comment="">
+    <list default="true" id="48d9b9b4-21c7-41b7-979f-1c78d4d78ada" name="Changes" comment="Added featured-products , featured-collections">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article.json" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snippets/card-product.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/card-product.liquid" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +38,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/featured-products&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Projects/secondary/cutyduty/sections&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -84,7 +83,19 @@
       <workItem from="1715106441933" duration="1933000" />
       <workItem from="1715150278676" duration="5000" />
       <workItem from="1715180609322" duration="4959000" />
+      <workItem from="1716791785530" duration="8000" />
+      <workItem from="1717009909396" duration="2558000" />
+      <workItem from="1717050580682" duration="4000" />
     </task>
+    <task id="LOCAL-00001" summary="Added featured-products , featured-collections">
+      <option name="closed" value="true" />
+      <created>1716641740708</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716641740708</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,5 +123,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added featured-products , featured-collections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added featured-products , featured-collections" />
   </component>
 </project>
