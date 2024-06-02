@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="48d9b9b4-21c7-41b7-979f-1c78d4d78ada" name="Changes" comment="Added featured-products , featured-collections">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/global.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snippets/card-product.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/card-product.liquid" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +87,7 @@
       <workItem from="1716791785530" duration="8000" />
       <workItem from="1717009909396" duration="2558000" />
       <workItem from="1717050580682" duration="4000" />
+      <workItem from="1717311624435" duration="15705000" />
     </task>
     <task id="LOCAL-00001" summary="Added featured-products , featured-collections">
       <option name="closed" value="true" />

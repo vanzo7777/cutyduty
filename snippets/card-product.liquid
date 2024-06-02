@@ -22,137 +22,7 @@
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
-
-<style>
-  .product-card__row {
-    position: relative;
-    z-index: 10;
-    grid-row-start: 3;
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-
-  .product-card__row .color-label {
-    padding: 8px !important;
-  }
-
-  /* Form Elements */
-  .product-form__input {
-    flex: 0 0 100%;
-    padding: 0;
-    margin: 0 0 1.2rem 0;
-    max-width: 44rem;
-    min-width: fit-content;
-    border: none;
-  }
-
-  variant-radios,
-  variant-selects {
-    display: block;
-  }
-
-  .product-form__input--dropdown {
-    margin-bottom: 1.6rem;
-  }
-
-  .product-form__input .form__label {
-    padding-left: 0;
-  }
-
-  fieldset.product-form__input .form__label {
-    margin-bottom: 0.2rem;
-  }
-
-  .product-form__input input[type='radio'] {
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
-    position: absolute;
-    height: 1px;
-    width: 1px;
-  }
-
-  .product-form__input input[type='radio'] + label {
-    border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), var(--variant-pills-border-opacity));
-    background-color: rgb(var(--color-background));
-    color: rgba(var(--color-foreground));
-    border-radius: var(--variant-pills-radius);
-    color: rgb(var(--color-foreground));
-    display: inline-block;
-    margin: 0.7rem 0.5rem 0.2rem 0;
-    padding: 1rem 2rem;
-    font-size: 1.4rem;
-    letter-spacing: 0.1rem;
-    line-height: 1;
-    text-align: center;
-    transition: border var(--duration-short) ease;
-    cursor: pointer;
-    position: relative;
-  }
-
-  .product-form__input input[type='radio'] + label:before {
-    content: '';
-    position: absolute;
-    top: calc(var(--variant-pills-border-width) * -1);
-    right: calc(var(--variant-pills-border-width) * -1);
-    bottom: calc(var(--variant-pills-border-width) * -1);
-    left: calc(var(--variant-pills-border-width) * -1);
-    z-index: -1;
-    border-radius: var(--variant-pills-radius);
-    box-shadow: var(--variant-pills-shadow-horizontal-offset) var(--variant-pills-shadow-vertical-offset)
-    var(--variant-pills-shadow-blur-radius) rgba(var(--color-shadow), var(--variant-pills-shadow-opacity));
-  }
-
-  .product-form__input input[type='radio'] + label:hover {
-    border-color: rgb(var(--color-foreground));
-  }
-
-  .product-form__input input[type='radio']:checked + label {
-    background-color: rgb(var(--color-foreground));
-    color: rgb(var(--color-background));
-  }
-
-  .product-form__input input[type='radio']:not(.disabled) + label > .visually-hidden {
-    display: none;
-  }
-
-  @media screen and (forced-colors: active) {
-    .product-form__input input[type='radio']:checked + label {
-      text-decoration: underline;
-    }
-  }
-
-  .product-form__input input[type='radio']:checked + label::selection {
-    background-color: rgba(var(--color-background), 0.3);
-  }
-
-  .product-form__input input[type='radio']:disabled + label,
-  .product-form__input input[type='radio'].disabled + label {
-    border-color: rgba(var(--color-foreground), 0.1);
-    color: rgba(var(--color-foreground), 0.6);
-    text-decoration: line-through;
-  }
-
-  .product-form__input input[type='radio'].disabled:checked + label,
-  .product-form__input input[type='radio']:disabled:checked + label {
-    color: rgba(var(--color-background), 0.6);
-  }
-  .product-form__input input[type='radio']:focus-visible + label {
-    box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0 0.5rem rgba(var(--color-foreground), 0.55);
-  }
-
-  /* Fallback */
-  .product-form__input input[type='radio'].focused + label,
-  .no-js .shopify-payment-button__button [role='button']:focus + label {
-    box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0 0.5rem rgba(var(--color-foreground), 0.55);
-  }
-
-  /* No outline when focus-visible is available in the browser */
-  .no-js .product-form__input input[type='radio']:focus:not(:focus-visible) + label {
-    box-shadow: none;
-  }
-</style>
+{{ 'component-card-swatches.css' | asset_url | stylesheet_tag }}
 
 {%- if card_product and card_product != empty -%}
   {%- liquid
@@ -186,6 +56,9 @@
         {%- if card_product.featured_media -%}
           <div
               class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
+            <div class="loader__wrapper">
+              <span class="loader"></span>
+            </div>
             <div class="media media--transparent media--hover-effect">
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
               <img
@@ -341,66 +214,7 @@
           </div>
         </div>
 
-        <div class="product-card__row" style="">
-          {%- for option in card_product.options_with_values -%}
-            {% if option.name == 'Color' %}
-              {%- liquid
-                assign variants_available_arr = product.variants | map: 'available'
-                assign variants_option1_arr = product.variants | map: 'option1'
-                assign variants_option2_arr = product.variants | map: 'option2'
-                assign variants_option3_arr = product.variants | map: 'option3'
-
-                assign product_form_id = 'product-form-' | append: section.id
-              -%}
-              <fieldset class="js product-form__input product-form__input--{{ option.name | downcase }}">
-                {%- for value in option.values -%}
-                  {%- liquid
-                    assign option_disabled = true
-
-                    for option1_name in variants_option1_arr
-                      case option.position
-                        when 1
-                          if variants_option1_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
-                            assign option_disabled = false
-                          endif
-                        when 2
-                          if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
-                            assign option_disabled = false
-                          endif
-                        when 3
-                          if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == product.selected_or_first_available_variant.option2 and variants_option3_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
-                            assign option_disabled = false
-                          endif
-                      endcase
-                    endfor
-                  -%}
-
-                  <input
-                      type="radio"
-                      id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                      name="{{ option.name }}"
-                      value="{{ value | escape }}"
-                      form="{{ product_form_id }}"
-                      {% if option.selected_value == value %}
-                        checked
-                      {% endif %}
-                      {% if option_disabled %}
-                        class="disabled"
-                      {% endif %}
-                  >
-
-                  {% assign valuet = value | downcase | replace: ' ', '_' | append: '.jpg' %}
-
-                  <label
-                      class="color-label"
-                      for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                      style="background: url('{{ valuet | file_img_url }}')">
-                  </label>
-                {%- endfor -%}
-              </fieldset>
-            {% endif %}
-          {%- endfor -%}
-        </div>
+        {% render 'product-card-swatches', card_product: card_product %}
 
         {%- if show_quick_add -%}
           <div class="quick-add no-js-hidden">
