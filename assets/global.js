@@ -1257,3 +1257,61 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+
+
+document.addEventListener('click', (e) => {
+  const target = e.target.closest('.js-card-product-row input');
+
+  if(!target) return;
+
+  const colorValue = target.value;
+  const wrapper = target.closest('.card__content');
+  const variantsEl = wrapper.querySelector('[data-variants]');
+  const quickAddBtn = wrapper.querySelector('.quick-add button');
+
+  if (!variantsEl) return;
+
+  const variants = JSON.parse(variantsEl.innerHTML);
+  const currentVariant = variants.find(variant => variant.title.includes(colorValue));
+
+  if(!currentVariant) return;
+
+  updateImage(target,currentVariant.image);
+  updateQuickAddBtn(quickAddBtn, currentVariant)
+})
+
+const updateImage = (target, image) => {
+  const imageELs = target.closest('.card').querySelectorAll('.media img');
+  const loader =  target.closest('.card').querySelector('.loader__wrapper')
+
+  if(image.includes('no-image')) return;
+
+  loader.classList.add('visible');
+
+  imageELs[0].onload = function() {
+    loader.classList.remove('visible');
+    imageELs[1] && imageELs[1].remove();
+  };
+
+  imageELs[0].src = image;
+  imageELs[0].srcset = image;
+}
+
+const updateQuickAddBtn = (button, variant) => {
+  if(!variant || !button) return;
+  const productUrl = variant?.linked_product ? `/products/${variant.handle}` : button.dataset.productUrl;
+
+  if (productUrl.includes('?variant=')) {
+    const parts = productUrl.split('?variant=');
+
+    if (parts.length !== 2) return;
+
+    const prefix = parts[0];
+    const newString = prefix + '?variant=' + variant.id;
+
+    button.setAttribute('data-product-url', newString)
+
+  } else {
+    button.setAttribute('data-product-url', productUrl + `?variant=${variant.id}`)
+  }
+}

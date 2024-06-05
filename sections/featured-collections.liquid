@@ -1,0 +1,70 @@
+{% assign blocks = section.blocks %}
+
+{{ 'featured-collections.css' | asset_url | stylesheet_tag }}
+
+{% if collections != blank %}
+  <section class="featured-collections">
+    <div class="featured-collections__row">
+      {% for block in blocks %}
+        {% assign collection = block.settings.collection %}
+        {% assign image = block.settings.image | default: collection.featured_image %}
+        {% assign title = block.settings.title | default: collection.title %}
+
+        {% if collection == blank %}
+          {% continue %}
+        {% endif %}
+
+        <a
+            href="{{ collection.url }}"
+            class="featured-collections__col"
+        >
+          <img
+              class="featured-collections__img"
+              src="{{ image | img_url: '960x' }}"
+              srcset="{{ image | img_url: '960x' }} 1x , {{ image | img_url: '1920x' }} 2x"
+              alt="{{image.alt }}"
+          >
+          <div class="featured-collections__content">
+            <span class="featured-collections__title">
+              {{ title }}
+            </span>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Featured collections",
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured collections"
+    }
+  ]
+}
+{% endschema %}
